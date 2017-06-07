@@ -411,6 +411,7 @@ local function Scheduler(runner, modules)
 
     local function enqueue(item)
         print('current division is ' .. CONFIG.division)
+        item.options = item.options or {}
         item.options.division = CONFIG.division
         local ok, duration, options = pcall(modules[item.module].prepare, item.options or {})
         if not ok then
