@@ -318,7 +318,10 @@ def team_info(division, team_dict):
 
 def game_to_dict(division, game):
     # takes in a leaguevine game, and returns a dictionary with the relevant information
-    start_time = datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00')
+    try:
+        start_time = datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00')
+    except ValueError:
+        print('value error in times!')
     game_dict = { 'team_1': '',
                   'team_2': '',
                   'team_1_country': '',
