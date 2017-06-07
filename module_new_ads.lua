@@ -45,13 +45,13 @@ local image_idx = 0
 --    updated_content(k)
 --end
 
-util.file_watch("config.json", function(raw)
-    local config = json.decode(raw)
-    print('updating configuration in module_playoff, nr of ads: ' .. #config.ads_list)
-    for idx = 1, #config.ads_list do
-        print('ad ' .. idx .. ' is item ' .. config.ads_list[idx])
-    end
-end)
+--util.file_watch("config.json", function(raw)
+--    local config = json.decode(raw)
+--    print('updating configuration in module_playoff, nr of ads: ' .. #config.ads_list)
+--    for idx = 1, #config.ads_list do
+--        print('ad ' .. idx .. ' is item ' .. config.ads_list[idx])
+--    end
+--end)
 
 
 function M.can_schedule()
