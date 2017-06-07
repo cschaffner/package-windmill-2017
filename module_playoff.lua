@@ -44,6 +44,8 @@ function M.can_schedule(options)
     end
     if string.len(brackets[1].team_1)>0 then
         print(options.division .. ' division is ready for playoff')
+    else
+        print(options.division .. ' division has no playoff games filled in yet')
     end
     return string.len(brackets[1].team_1)>0
 end
