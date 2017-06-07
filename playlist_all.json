@@ -20,6 +20,13 @@
     }
 
 },  {
+    "module": "swissgames",
+    "chance": 1,
+    "options": {
+        "duration": 20
+    }
+
+},{
     "module": "weather",
     "chance": 0.2,
     "options": {

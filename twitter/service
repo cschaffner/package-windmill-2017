@@ -16,10 +16,10 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 
-from hosted import CONFIG
-CONFIG.restart_on_update()
-# with file("config.json") as f:
-#     CONFIG = json.load(f)
+# from hosted import CONFIG
+# CONFIG.restart_on_update()
+with file("config.json") as f:
+    CONFIG = json.load(f)
 
 TMPDIR = os.environ['TMPDIR']
 

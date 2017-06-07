@@ -58,9 +58,6 @@
         "text": "Make your own screens? Check out https://info-beamer.com "
     },
     "chance": 0.6
-},{
-    "module": "twitter",
-    "chance": 0.6
 }, {
     "module": "weather",
     "chance": 0.3,
