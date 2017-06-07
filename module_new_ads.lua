@@ -47,7 +47,7 @@ local image_idx = 0
 
 util.file_watch("config.json", function(raw)
     local config = json.decode(raw)
-    print(#config.ads_list)
+    print('updating configuration in module_playoff, nr of ads: ' .. #config.ads_list)
     for idx = 1, config.ads_list do
         print('ad ' .. idx .. ' is item ' .. CONFIG.ads_list[idx])
     end
