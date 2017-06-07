@@ -51,11 +51,11 @@ function M.can_schedule(options)
 end
 
 function M.prepare(options)
-    if options.division == 'open' then
+    if CONFIG.division == 'open' then
         options.top_title = 'Open'
-    elseif options.division == 'mixed' then
+    elseif CONFIG.division == 'mixed' then
         options.top_title = 'Mixed'
-    elseif options.division == 'women' then
+    elseif CONFIG.division == 'women' then
         options.top_title = 'Women'
     end
 
@@ -64,11 +64,11 @@ end
 
 function M.run(duration, args, fn)
     local brackets
-    if args.division == 'open' then
+    if CONFIG.division == 'open' then
         brackets = open_brackets
-    elseif args.division == 'mixed' then
+    elseif CONFIG.division == 'mixed' then
         brackets = mixed_brackets
-    elseif args.division == 'women' then
+    elseif CONFIG.division == 'women' then
         brackets = women_brackets
     end
 
