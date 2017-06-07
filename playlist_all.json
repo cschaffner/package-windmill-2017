@@ -20,8 +20,6 @@
     }
 
 },  {
-    "module": "twitter"
-}, {
     "module": "weather",
     "chance": 0.2,
     "options": {
