@@ -12,7 +12,8 @@
             ["windmill2016_test.json", "test 2016"],
             ["windmill2017.json", "real 2017"],
             ["windmill2017_test.json", "test 2017"]
-        ]
+        ],
+        "default": "windmill2017.json"
         },
         {
             "title": "Leaguevine server",
@@ -23,6 +24,7 @@
                 ["lv", "leaguevine server"],
                 ["playwithlv", "playwithlv server"],
                 ["local", "local leaguevine server"]
-            ]
+            ],
+            "default": "lv"
         }]
 }
