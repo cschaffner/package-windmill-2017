@@ -1,6 +1,6 @@
 [
     {
-    "module": "teams",
+    "module": "new_ads",
     "chance": 1,
     "options": {
         "duration": 10
