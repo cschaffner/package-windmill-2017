@@ -1,0 +1,39 @@
+[{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "rotating_elephant_big.mp4",
+                "duration": 10,
+                "raw": false,
+                "text": "Welcome to Windmill 2016!"
+            }
+        ]
+    },
+    "chance": 0.2
+},
+{
+    "module": "teams",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+
+},  {
+    "module": "twitter"
+}, {
+    "module": "weather",
+    "chance": 0.2,
+    "options": {
+        "duration": 15
+    }
+},{
+    "module": "images",
+    "chance": 0.6
+},{
+    "module": "ads",
+    "chance": 0.6
+},{
+    "module": "gvb",
+    "chance": 0.6
+}]

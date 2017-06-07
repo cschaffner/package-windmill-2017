@@ -1,0 +1,169 @@
+* Abkhaz: {{t|ab|бзиала шәаабеит|sc=Cyrl}}
+* Adangme: {{t|ada|mo-hee-e}}
+* Afrikaans: {{t|af|welkom!}}
+* Albanian: {{t|sq|mirë se vjen}}, {{t|sq|mirësevjen}}, {{t|sq|mirë se vini}}, {{t|sq|mirësevini}}
+* American Sign Language: {{t|ase|OpenB@DistalSideChesthigh-PalmAcross RoundVert OpenB@DistalInsideTrunkhigh-PalmUp RoundHoriz OpenB@NearCenterTrunkhigh-PalmUp}}
+* Amharic: {{t|am|እንኳን ደህና መጡ|p|sc=Ethi}}
+* Arabic: {{t|ar|أَهْلًا وَسَهْلًا|tr=ʾahlan wa-sahlan}}, {{t+|ar|مَرْحَبًا}}
+*: Moroccan Arabic: {{t|ary|مرحبة|tr=marḥaba}}
+* Armenian: {{t|hy|բարի գալուստ|sc=Armn}}
+* Aromanian: {{t|rup|ghini vinishi|s}}, {{t|rup|ghini vinit|p}}
+* Asturian: {{t|ast|bienveníu}}
+* Azeri: {{t|az|xoş gəlmişsiniz!}}
+* Bashkir: {{t|ba|рәхим итегеҙ|sc=Cyrl}}
+* Basque: {{t+|eu|ongi etorri}}
+* Belarusian: {{t|be|вiта́ем!|sc=Cyrl}}
+* Bengali: {{t+|bn|স্বাগতম|tr=sbagôtôm|sc=Beng}}
+* Breton: {{t+|br|degemer mat}}, {{t|br|donemat}}
+* Bulgarian: {{t|bg|до́бре дошъ̀л|s|sc=Cyrl}} {{qualifier|to a man, informal}}, {{t|bg|до́бре дошла́|s|sc=Cyrl}} {{qualifier|to a woman, informal}}, {{t|bg|до́бре дошли́|p|sc=Cyrl}} {{qualifier|formal or to a group}}
+* Burmese: {{t+|my|ကြိုဆိုပါ၏|sc=Mymr}}
+* Catalan: {{t+|ca|benvingut|m}}, {{t+|ca|benvinguda|f}}, {{t+|ca|benvinguts|m-p}}, {{t+|ca|benvingudes|f-p}}
+* Cebuano: {{t|ceb|maayong pag-abot}}
+* Chechen: {{t|ce|маьрша воагӏийл|m|sc=Cyrl}}, {{t|ce|маьрша йогӏийл|f|sc=Cyrl}}, {{t|ce|маьрша догӏийла|p|sc=Cyrl}}
+* Cherokee: {{t+|chr|ᎤᎵᎮᎵᏍᏗ|tr=ulihelisdi|sc=Cher}}
+* Chinese:
+*: Cantonese: {{t|yue|歡迎|sc=Hani}}, {{t|yue|欢迎|tr=fun1 jing4|sc=Hani}}, {{t|yue|歡迎光臨|sc=Hani}}, {{t|yue|欢迎光临|tr=fun1 jing4 gwong1 lam4|sc=Hani}}
+*: Dungan: {{t|dng|хуан-ин|tr=huan-ying|sc=Cyrl}}
+*: Hakka: {{t|hak|歡迎|sc=Hani}}, {{t|hak|欢迎|tr=fôn-ngiàng|sc=Hani}}
+*: Mandarin: {{t+|cmn|歡迎光臨|sc=Hani}}, {{t|cmn|欢迎光临|tr=huānyíng guānglín|sc=Hani}}, {{t+|cmn|歡迎|sc=Hani}}, {{t+|cmn|欢迎|tr=huānyíng|sc=Hani}}
+*: Min Nan: {{t|nan|歡迎光臨}}, {{t|nan|欢迎光临|tr=hoan-gêng kong-lîm}}
+*: Wu: {{t|wuu|歡迎|sc=Hani}}, {{t|wuu|欢迎|tr=huoe nyin|sc=Hani}}
+* Cornish: {{t|kw|dynnargh dhis}}
+* Corsican: {{t|co|bonavinuta}}
+* Cree: {{t|cr|ᑕᐋᐧᐤ|tr=tawâw}}, {{t|cr|ᑕᑕᐊᐧᐤ|tr=tatawaw}} {{qualifier|both meaning "there is room [for you, so come in"}}
+* Czech: {{t|cs|vítáme tě}}, {{qualifier|singular/informal}} {{t|cs|vítej}}, {{t|cs|vítáme vás}}, {{qualifier|plural/formal}} {{t|cs|vítejte}}
+* Danish: {{t+|da|velkommen}}!
+* Dutch: {{t+|nl|welkom!}}
+* Esperanto: {{t|eo|bonvenon!}}
+* Estonian: {{t|et|tere tulemast!}}
+* Ewe: {{t|ee|wòe zɔ|s}}, {{t|ee|miawoe zɔ|p}}
+* Faroese: {{t|fo|vælkoma}}
+* Finnish: {{t+|fi|tervetuloa!}}
+* French: {{t+|fr|bienvenue}}
+* Friulian: {{t|fur|benvignût}}
+* Galician: {{t+|gl|benvido}}, {{t|gl|benvindo}}
+* Georgian: {{t|ka|კეთილი იყოს თქვენი მობრძანება|p|sc=Geor}}, {{t|ka|კეთილი იყოს შენი მობრძანება|s|sc=Geor}}
+* German: {{t+|de|willkommen}}
+*: Middle High German: {{t|gmh|willekomen!}}
+*: Old High German: {{t|goh|willechomen!}}
+* Greek: {{t|el|καλώς ορίσατε}}
+*: Ancient: {{t|grc|χαῖρε|sc=polytonic}}
+* Greenlandic: {{t|kl|tikilluarit}}
+* Guaraní: {{t|gn|tereg̃uahẽ porãite!}}, {{t|gn|eguahé porá!}}
+* Gujarati: {{t|gu|પધારો|tr=padhāro|sc=Gujr}}
+* Hawaiian: {{t|haw|aloha}}
+* Hebrew: {{t+|he|ברוך הבא|m|tr=barúkh habá|alt=!בָּרוּךְ הַבָּא|sc=Hebr}}, {{t|he|ברוכה הבאה|f|tr=brukhá habáa|alt=!ברוכה הבאה|sc=Hebr}}, {{t|he|ברוכים הבאים|p|tr=brukhím habaím|alt=!ברוכים הבאים|sc=Hebr}}, {{t|he|ברוכות הבאות|f-p|tr=brukhót habaót|alt=!ברוכות הבאות|sc=Hebr}}
+* Hindi: {{t|hi|स्वागतम|sc=Deva}}, {{t|hi|स्वागत है|sc=Deva}}
+* Hungarian: {{t+|hu|Isten hozott}}! {{qualifier|less formal}}, {{t|hu|Isten hozta}}! {{qualifier|more formal}}, {{t|hu|üdvözöljük}}
+* Icelandic: {{t+|is|velkominn}}! {{g|m}}, {{t+|is|velkomin}} {{qualifier|f sg & mixed pl}}, {{t|is|velkomnir|m-p}}, {{t|is|velkomnar|f-p}}
+* Ido: {{t+|io|bonveno}}
+* Igbo: {{t|ig|nno̱}}, {{t|ig|nnọọ}}
+* Inari Sami: {{t|smn|pyereest puáttim}}
+* Indonesian: {{t+|id|selamat datang!}}
+*: Javanese: {{t|jv|sugeng rawuh!}}
+*: Sundanese: {{t|su|wilujeng sumping!}}
+* Interlingua: {{t|ia|benvenite!}}
+* Inuktitut: {{t+|iu|ᐊᕆᐅᙵᐃᐹ|sc=Cans}}
+* Irish: {{t|ga|fáilte}}, {{t|ga|tá fáilte romhat}}, {{t|ga|tá fáilte romhaibh}}, {{t|ga|céad míle fáilte}}, {{t|ga|fáilte romhat isteach}}
+* Italian: {{t+|it|benvenuto!|m}}, {{t|it|benvenuta!|f}}, {{t|it|benvenuti!|p}}, {{t|it|benvenute!|f-p}}, {{t+|it|salve}}
+* Japanese: {{t|ja|ようこそ|tr=yōkoso|sc=Jpan}}, {{t|ja|いらっしゃいませ|tr=irasshaimase|sc=Jpan}}, {{t|ja|いらっしゃい|tr=irasshai|sc=Jpan}}
+* Judeo-Arabic: {{t|jrb|harif}}
+* Nogai: {{t|nog|кош келдинъиз}}
+* Norman: {{t|nrf|séyiz l'beinv'nu!|m}}, {{t|nrf|séyiz la beinv'nue!|f}}, {{t|nrf|séyiz les beinv'nus!|p}}
+* Kazakh: {{t|kk|қош келдіңіз|sc=Cyrl}}
+* Khmer: {{t+|km|ស្វាគមន៍|tr=swagum|sc=Khmr}}
+* Korean: {{t|ko|잘 오셨습니다|sc=Kore}}, {{t|ko|환영합니다|sc=Kore}}, {{t|ko|어서 오세요|sc=Kore}}
+* Kurdish:
+*: Kurmanji: {{t+|ku|bi xêr bên|p}}, {{t|ku|bi xêr bê|s}}
+*: Sorani: {{t|ku|به‌خێربێی|s|tr=ba xêr bêi|sc=ku-Arab}}, {{t|ku|به‌خێربێن|p|tr=be xêr bên|sc=ku-Arab}}
+{{trans-mid}}
+* Kyrgyz: {{t|ky|кош келипсиз|sc=Cyrl}}, {{t|ky|келиңиз|sc=Cyrl}}, {{t|ky|келиңиздер|sc=Cyrl}}
+* Lao: {{t|lo|ຍິນດີຕ້ອນຮັບ|sc=Laoo}}
+* Latin: {{t|la|salve!|s}}, {{t|la|salvete!|p}}
+* Latvian: {{t|lv|laipni lūdzam!|p}}
+* Limburgish: {{t|li|wilkóm}}
+* Lithuanian: {{t|lt|sveiki atvykę}}
+* Lojban: {{t-check|jbo|fi}} 'i
+* Lule Sami: {{t|smj|buerie båeteme}}
+* Luxembourgish: {{t|lb|wëllkëmm!}}
+* Lü: {{t-needed|khb}}
+* Macedonian: {{t|mk|добре́дојде!|sc=Cyrl}} {{qualifier|singular and informal}}, {{t|mk|добредо́јдовте!|sc=Cyrl}} {{qualifier|plural or formal}}
+* Malay: {{t|ms|selamat datang}}
+* Malayalam: {{t+|ml|സ്വാഗതം|sc=Mlym}}
+* Maltese: {{t|mt|merħba}}
+* Manchu: {{t-needed|mnc}}
+* Manx: {{t|gv|failt}}, {{t|gv|failt royd}}
+* Maori: {{t|mi|haere mai}}, {{t|mi|nau mai}}
+* Marathi: {{t|mr|स्वागत आहे|sc=Deva}}
+* Mazanderani: {{t|mzn|خش ‌بیمونی}}
+* Mi'kmaq: {{t|mic|weltasualuleg}}
+* Mongolian: {{t|mn|тавтай морилогтун|sc=Cyrl}}
+* Nahuatl: {{qualifier|verb; singular: ximopanōlti; plural: ximopanōltih; literally, "do pass yourself/ves"}} {{t|nah|panoa}}
+* Navajo: {{t|nv|yáʼátʼééh}}, {{t|nv|wóshdę́ę́ʼ}}
+* Neapolitan: {{t|nap|bemmenute}}
+* Ngarrindjeri: {{t|nay|nguldi arndu}}
+* Northern Sami: {{t|se|bures boahtin}}
+* Norwegian: {{t+|no|velkommen}}
+* Occitan: {{t+|oc|benvengut}}
+* Ojibwe: {{t|oj|aaniin|sc=Cans}}, {{t|oj|boozhoo|sc=Cans}}
+* Old Church Slavonic:
+*: Cyrillic: {{t|cu|до́брѣ прити́|tr=dóbrě prití|sc=Cyrs}}
+*: Glagolitic: {{t|cu|ⰴⱁⰱⱃⱑ ⱂⱃⰻⱅⰻ|tr=dóbrě prití|sc=Cyrs}}
+* Papiamentu: {{t|pap|bon bini!}}
+* Pashto: {{t|ps|په خیر راغلې|tr=pë xeyr rağle|sc=ps-Arab}}
+* Persian: {{qualifier|literary, polite}} {{t+|fa|خوش آمدید|tr=xoš âmadid}}, {{qualifier|literary, familiar}} {{t|fa|خوش آمدی|tr=xoš âmadi}}, {{qualifier|colloquial, polite}} {{t|fa|خوش اومدین|tr=xoš umadin}}, {{qualifier|colloquial, familiar}} {{t|fa|خوش اومدی|tr=xoš umadi}}
+* Pitcairn-Norfolk: {{t|pih|welkam}}
+* Polish: {{t|pl|witaj!|s}}, {{t|pl|witajcie!|p}}, {{t|pl|witamy}}
+* Portuguese: {{t+|pt|bem-vindo!|m}}, {{t|pt|bem-vinda!|f}}, {{t|pt|bem-vindos!|p}}, {{t|pt|bem-vindas!|f-p}}
+* Punjabi: {{t|pa|ਜੀ ਆਇਆ ਨੂੰ|tr=jī āiā nūng|sc=Guru}}
+* Romanian: {{t|ro|bine ai venit!|s}}, {{t|ro|bine ați venit!|p}}, {{t|ro|bun venit}}, {{t|ro|bine ai venit}}
+* Romansch: {{t|rm|bainvegni}}
+* Russian: {{t+|ru|добро́ пожа́ловать}}!, {{t+|ru|приветствовать|alt=приве́тствуем!}} {{qualifier|we are greeting you}}
+* Sanskrit: {{t|sa|स्वागतम|alt=स्वागतम्|sc=Deva}}
+* Sardinian: {{t|sc|bene bennios}}, {{t|sc|benénnidu!}}
+* Scots: {{t|sco|walcum}}
+* Scottish Gaelic: {{t|gd|fàilte}}, {{t|gd|ceud mìle fàilte}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|добродошли|sc=Cyrl}}
+*: Roman: {{t+|sh|dobrodošli}}
+* Shan: {{t-needed|shn}}
+* Sicilian: {{t+|scn|binvinutu}}, {{t+|scn|bimminutu}}
+* Sindhi: {{t|sd|ڀلي ڪري آيا|tr=bhalie karay aaya|alt=!ڀلي ڪري آيا|sc=sd-Arab}}
+* Sinhalese: {{t+|si|ආයුබෝවන්|sc=Sinh}}
+* Skolt Sami: {{t|sms|tiõrv pue´ttmest}}
+* Slovak: {{t|sk|vitajte}}
+* Slovene: {{t+|sl|dobrodošel!|m}}, {{t|sl|dobrodošla!|f}}, {{t|sl|dobrodošli!|p}}
+* Somali: {{t|so|soo dhowow}}
+* Southern Sami: {{t|sma|buorre boahtem}}
+* Spanish: {{t+|es|bienvenido|m|alt=¡bienvenido!}}, {{t+|es|bienvenida|f|alt=¡bienvenida!}}, {{t+|es|bienvenidos|p}}
+* Sukuma: {{t|suk|tuliho!}}
+* Swahili: {{t+|sw|karibu!}}
+* Swedish: {{t+|sv|välkommen}}!, {{t+|sv|välkomna|p}}
+* Tagalog: {{t|tl|maligayang pagdating}}, {{t|tl|Mabuhay}}
+* Tahitian: {{t|ty|maeva}}, {{t|ty|manava}}
+* Tajik: {{t|tg|хуш омадед|sc=Cyrl}}, {{t|tg|хуш омадӣ|sc=Cyrl}}
+* Tamil: {{t+|ta|வரவேற்பு|sc=Taml}}
+* Tarantino: {{t|roa-tar|bovègne}}
+* Tatar: {{t|tt|рәхим итегез|sc=Cyrl}}
+* Telugu: {{t+|te|స్వాగతం|sc=Telu}}
+* Thai: {{t|th|ยินดีต้อนรับ|tr=yindee dtôn ráp|sc=Thai}}
+* Tigrinya: {{t|ti|ገንዘብካ|sc=Ethi}}
+* Turkish: {{t+|tr|hoş geldin|s}}, {{t+|tr|hoş geldiniz|p}} (formal)
+* Turkmen: {{t|tk|hoş geldiňiz}}
+* Tz'utujil: {{t|tzj|utz epejtiik}}
+* Udmurt: {{t|udm|гажаса ӧтиськом|sc=Cyrl}}
+* Ukrainian: {{t|uk|ласка́во про́симо!|sc=Cyrl}}
+* Unami: {{t|unm|nulelìntàm èli paàn}}
+* Urdu: {{t|ur|خوش آمديد|tr=xūś āmadīd|sc=ur-Arab}}
+* Uyghur: {{t|ug|خۇش كەپسىز|alt=!خۇش كەپسىز|sc=ug-Arab}}
+* Uzbek: {{t|uz|xush kelibsiz}}
+* Venetian: {{t|vec|benvegnuo}}
+* Vietnamese: {{t|vi|xin chào}}, {{t+|vi|chào}}, {{t+|vi|hoan nghênh}}, {{t|vi|được tiếp đi ân cần}}
+* Volapük: {{t|vo|vekömö}}
+* Walloon: {{t+|wa|bénvnowe}}, {{t+|wa|wilicom}} {{qualifier|old}}
+* Welsh: {{t+|cy|croeso!}}, {{t|cy|croeso cynnes iawn}}
+* West Frisian: {{t+|fy|wolkom!}}
+* Xhosa: {{t|xh|wamkelekile|s}}, {{t|xh|namkelekile|p}}
+* Yiddish: {{t|yi|ברוכים־הבאים|s|tr=brukhim-haboim|sc=Hebr}}, {{t|yi|ברוך־הבא|tr=borekh-habo|sc=Hebr}}
+* Zulu: {{t|zu|isibingelelo!}}, {{t+|zu|sawubona!}}, {{t|zu|uwamkelekile}}
+

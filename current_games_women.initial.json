@@ -1,0 +1,410 @@
+{
+  "standings":[
+    {
+      "ranking":1,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-5.50",
+      "team_id":31131,
+      "team_country":"at",
+      "swiss_score":"5.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31131/test-eyecatchers/",
+        "short_name":"Test Eyecatchers",
+        "id":31131,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31131/",
+        "name":"Test Eyecatchers"
+      },
+      "ties":0,
+      "team_name":"flag:at Eyecatchers",
+      "avg_goal_difference":"11.00"
+    },
+    {
+      "ranking":2,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-3.50",
+      "team_id":31126,
+      "team_country":"it",
+      "swiss_score":"3.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31126/test-cusb-shout/",
+        "short_name":"Test Shout",
+        "id":31126,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31126/",
+        "name":"Test CUSB SHOUT"
+      },
+      "ties":0,
+      "team_name":"flag:it Shout",
+      "avg_goal_difference":"7.00"
+    },
+    {
+      "ranking":3,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-2.50",
+      "team_id":31141,
+      "team_country":"at",
+      "swiss_score":"2.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31141/test-mantis/",
+        "short_name":"Test Mantis",
+        "id":31141,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31141/",
+        "name":"Test Mantis"
+      },
+      "ties":0,
+      "team_name":"flag:at Mantis",
+      "avg_goal_difference":"5.00"
+    },
+    {
+      "ranking":4,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-1.50",
+      "team_id":31137,
+      "team_country":"de",
+      "swiss_score":"1.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31137/test-german-u24-womens-national-team/",
+        "short_name":"GER U24",
+        "id":31137,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31137/",
+        "name":"Test German U24 Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:de U24W Germany",
+      "avg_goal_difference":"3.00"
+    },
+    {
+      "ranking":5,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-1.50",
+      "team_id":31127,
+      "team_country":"ch",
+      "swiss_score":"1.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31127/test-crazy-dogs-women/",
+        "short_name":"Test Crazy Dogs",
+        "id":31127,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31127/",
+        "name":"Test Crazy Dogs Women"
+      },
+      "ties":0,
+      "team_name":"flag:ch Crazy Dogs",
+      "avg_goal_difference":"3.00"
+    },
+    {
+      "ranking":6,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-1",
+      "team_id":31146,
+      "team_country":"fr",
+      "swiss_score":"1",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31146/test-yaka/",
+        "short_name":"Test YAKA",
+        "id":31146,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31146/",
+        "name":"Test YAKA"
+      },
+      "ties":0,
+      "team_name":"flag:fr YAKA",
+      "avg_goal_difference":"2.00"
+    },
+    {
+      "ranking":7,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-0.50",
+      "team_id":31136,
+      "team_country":"ch",
+      "swiss_score":"0.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31136/test-foehn-fight/",
+        "short_name":"Test Foehn Fight",
+        "id":31136,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31136/",
+        "name":"Test Foehn Fight"
+      },
+      "ties":0,
+      "team_name":"flag:ch Foehn Fight",
+      "avg_goal_difference":"1.00"
+    },
+    {
+      "ranking":8,
+      "wins":1,
+      "losses":0,
+      "swiss_opponent_score_avg":"-0.50",
+      "team_id":31142,
+      "team_country":"be",
+      "swiss_score":"0.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31142/test-rakata/",
+        "short_name":"Test Rakata",
+        "id":31142,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31142/",
+        "name":"Test Rakata"
+      },
+      "ties":0,
+      "team_name":"flag:be Rakata",
+      "avg_goal_difference":"1.00"
+    },
+    {
+      "ranking":9,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"0.50",
+      "team_id":31130,
+      "team_country":"ie",
+      "swiss_score":"-0.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31130/test-dublin-gravity/",
+        "short_name":"Test Gravity",
+        "id":31130,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31130/",
+        "name":"Test Dublin Gravity"
+      },
+      "ties":0,
+      "team_name":"flag:ie Gravity",
+      "avg_goal_difference":"-1.00"
+    },
+    {
+      "ranking":10,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"0.50",
+      "team_id":31144,
+      "team_country":"ca",
+      "swiss_score":"-0.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31144/test-storm/",
+        "short_name":"Test Storm",
+        "id":31144,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31144/",
+        "name":"Test Storm"
+      },
+      "ties":0,
+      "team_name":"flag:ca Storm",
+      "avg_goal_difference":"-1.00"
+    },
+    {
+      "ranking":11,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"1",
+      "team_id":31138,
+      "team_country":"gb",
+      "swiss_score":"-1",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31138/test-ice-box/",
+        "short_name":"Test Ice Box",
+        "id":31138,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31138/",
+        "name":"Test Ice Box"
+      },
+      "ties":0,
+      "team_name":"flag:gb Ice Box",
+      "avg_goal_difference":"-2.00"
+    },
+    {
+      "ranking":12,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"1.50",
+      "team_id":31140,
+      "team_country":"nl",
+      "swiss_score":"-1.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31140/test-madurodames/",
+        "short_name":"Maduro",
+        "id":31140,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31140/",
+        "name":"Test MaduroDames"
+      },
+      "ties":0,
+      "team_name":"flag:nl MaduroDames",
+      "avg_goal_difference":"-3.00"
+    },
+    {
+      "ranking":13,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"1.50",
+      "team_id":31145,
+      "team_country":"cz",
+      "swiss_score":"-1.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31145/test-velka-morava/",
+        "short_name":"Velka",
+        "id":31145,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31145/",
+        "name":"Test Velka Morava"
+      },
+      "ties":0,
+      "team_name":"flag:cz Velka Morava",
+      "avg_goal_difference":"-3.00"
+    },
+    {
+      "ranking":14,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"2.50",
+      "team_id":31128,
+      "team_country":"pl",
+      "swiss_score":"-2.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31128/test-donuts/",
+        "short_name":"Test Donuts",
+        "id":31128,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31128/",
+        "name":"Test Donuts"
+      },
+      "ties":0,
+      "team_name":"flag:pl Donuts",
+      "avg_goal_difference":"-5.00"
+    },
+    {
+      "ranking":15,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"3.50",
+      "team_id":31139,
+      "team_country":"de",
+      "swiss_score":"-3.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31139/test-jinx/",
+        "short_name":"Test JinX",
+        "id":31139,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31139/",
+        "name":"Test JinX"
+      },
+      "ties":0,
+      "team_name":"flag:de JinX",
+      "avg_goal_difference":"-7.00"
+    },
+    {
+      "ranking":16,
+      "wins":0,
+      "losses":1,
+      "swiss_opponent_score_avg":"5.50",
+      "team_id":31143,
+      "team_country":"gb",
+      "swiss_score":"-5.50",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/31143/test-syc/",
+        "short_name":"Test SYC",
+        "id":31143,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/31143/",
+        "name":"Test SYC"
+      },
+      "ties":0,
+      "team_name":"flag:gb SYC",
+      "avg_goal_difference":"-11.00"
+    }
+  ],
+  "round_name":"Round 1",
+  "start_time":"Fri 10:00",
+  "games":[
+    {
+      "field":"Field 1",
+      "team_1_country":"fr",
+      "team_2_score":15,
+      "team_1_score":17,
+      "team_1":"YAKA",
+      "team_2":"Ice Box",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"gb",
+      "field_nr":"1"
+    },
+    {
+      "field":"Field 2",
+      "team_1_country":"cz",
+      "team_2_score":14,
+      "team_1_score":11,
+      "team_1":"Velka",
+      "team_2":"GER U24",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"de",
+      "field_nr":"2"
+    },
+    {
+      "field":"Field 3",
+      "team_1_country":"ca",
+      "team_2_score":15,
+      "team_1_score":14,
+      "team_1":"Storm",
+      "team_2":"Foehn Fight",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"ch",
+      "field_nr":"3"
+    },
+    {
+      "field":"Field 4",
+      "team_1_country":"gb",
+      "team_2_score":12,
+      "team_1_score":1,
+      "team_1":"SYC",
+      "team_2":"Eyecatchers",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"at",
+      "field_nr":"4"
+    },
+    {
+      "field":"Field 5",
+      "team_1_country":"be",
+      "team_2_score":13,
+      "team_1_score":14,
+      "team_1":"Rakata",
+      "team_2":"Gravity",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"ie",
+      "field_nr":"5"
+    },
+    {
+      "field":"Field 6",
+      "team_1_country":"at",
+      "team_2_score":9,
+      "team_1_score":14,
+      "team_1":"Mantis",
+      "team_2":"Donuts",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"pl",
+      "field_nr":"6"
+    },
+    {
+      "field":"Field 7",
+      "team_1_country":"nl",
+      "team_2_score":12,
+      "team_1_score":9,
+      "team_1":"Maduro",
+      "team_2":"Crazy Dogs",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"ch",
+      "field_nr":"7"
+    },
+    {
+      "field":"Field 8",
+      "team_1_country":"de",
+      "team_2_score":13,
+      "team_1_score":6,
+      "team_1":"JinX",
+      "team_2":"Shout",
+      "is_final":true,
+      "start_time":"Fri 10:00",
+      "team_2_country":"it",
+      "field_nr":"8"
+    }
+  ],
+  "time_last_updated_unix":1496495510,
+  "start_time_unix":1496995200
+}

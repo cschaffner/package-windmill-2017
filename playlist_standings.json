@@ -1,0 +1,13 @@
+[{
+    "module": "swissgames",
+    "chance": 0.9,
+    "options": {
+        "duration": 20
+    }
+}, {
+    "module": "playoff",
+    "chance": 0.8,
+    "options": {
+        "duration": 20
+    }
+}]

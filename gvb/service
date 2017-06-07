@@ -1,0 +1,54 @@
+#!/usr/bin/python
+import sys
+import time
+import json
+import pytz
+import requests
+
+from operator import itemgetter
+from calendar import timegm
+from datetime import datetime
+
+MET = pytz.timezone("Europe/Amsterdam")
+
+
+def get_schedule():
+    r = requests.get('http://v0.ovapi.nl/stopareacode/03121')
+    data = r.json()['03121']['30003122']['Passes']
+
+    departures = []
+
+    for id, cur_pass in data.items():
+        exp_dep_time = datetime.strptime(cur_pass['ExpectedDepartureTime'], '%Y-%m-%dT%H:%M:%S')
+        exp_dep_time = MET.localize(exp_dep_time)
+        nice_date = exp_dep_time.strftime('%H:%M')
+        exp_dep_time = exp_dep_time.astimezone(pytz.utc)
+        exp_dep_time = exp_dep_time.replace(tzinfo=None)
+        dep = {
+            'stop': cur_pass['TimingPointName'],
+            'direction': cur_pass['DestinationName50'],
+            'type': cur_pass['TransportType'],
+            'line': cur_pass['LinePublicNumber'],
+            'nice_date': nice_date,
+            'date': int(timegm(exp_dep_time.timetuple())),
+        }
+        departures.append(dep)
+
+
+    departures = sorted(departures, key=itemgetter('date'))
+
+    return json.dumps(departures,ensure_ascii=False,indent=2).encode("utf8")
+
+def update():
+    with file("../gvb.json", "wb") as f:
+        f.write(get_schedule())
+    print >> sys.stderr, "updated GVB bus schedule"
+
+
+def main():
+    while 1:
+        update()
+        time.sleep(180)
+
+if __name__ == "__main__":
+    main()

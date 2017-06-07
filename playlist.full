@@ -1,0 +1,101 @@
+[{
+    "module": "text",
+    "options": {
+        "text": "Welcome to Windmill 2016!"
+    },
+    "chance": 1
+},{
+    "module": "twitter"
+}, {
+    "module": "weather",
+    "chance": 1,
+    "options": {
+        "duration": 15
+    }
+
+},{
+    "module": "gvb",
+    "hours": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+},{
+    "module": "teams",
+    "hours": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+},{
+    "module": "swissgames",
+    "chance": 1,
+    "options": {
+        "division": "open",
+        "font_size": 50,
+        "y_lift": 300,
+        "top_title": "Open",
+        "line_break_fraction_games": 2,
+        "line_break_fraction_standings": 7,
+        "duration": 20
+    }
+}, {
+    "module": "playoff",
+    "chance": 1,
+    "options": {
+        "division": "open",
+        "top_title": "Open",
+        "duration": 30
+    }
+},
+{
+    "module": "swissgames",
+    "chance": 0,
+    "options": {
+        "division": "women",
+        "font_size": 50,
+        "y_lift": 0,
+        "top_title": "Women",
+        "line_break_fraction_games": 2,
+        "line_break_fraction_standings": 4,
+        "duration": 20
+    }
+},
+ {
+    "module": "playoff",
+    "chance": 0,
+    "options": {
+        "division": "women",
+        "top_title": "Women",
+        "duration": 20
+    }
+},{
+    "module": "swissgames",
+    "chance": 0,
+    "options": {
+        "division": "mixed",
+        "font_size": 42,
+        "y_lift": 800,
+        "top_title": "Mixed",
+        "line_break_fraction_games": 20,
+        "line_break_fraction_standings": 8,
+        "duration": 20
+    }
+},
+   {
+    "module": "playoff",
+    "chance": 0,
+    "options": {
+        "division": "mixed",
+        "top_title": "Mixed",
+        "duration": 20
+    }
+},
+{
+    "module": "teams",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+
+}]

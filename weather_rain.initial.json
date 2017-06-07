@@ -1,0 +1,338 @@
+{
+  "color": "#5A9BD3", 
+  "lon": 4.21, 
+  "forecasts": [
+    {
+      "time": "00:20", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:20:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:20:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:25", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:25:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:25:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:30", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:30:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:30:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:35", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:35:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:35:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:40", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:40:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:40:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:45", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:45:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:45:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:50", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:50:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:50:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "00:55", 
+      "value": 0, 
+      "datetime": "2016-05-30T00:55:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T22:55:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:00", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:00:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:00:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:05", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:05:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:05:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:10", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:10:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:10:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:15", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:15:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:15:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:20", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:20:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:20:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:25", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:25:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:25:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:30", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:30:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:30:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:35", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:35:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:35:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:40", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:40:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:40:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:45", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:45:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:45:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:50", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:50:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:50:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "01:55", 
+      "value": 0, 
+      "datetime": "2016-05-30T01:55:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-29T23:55:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:00", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:00:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:00:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:05", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:05:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:05:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:10", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:10:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:10:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:15", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:15:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:15:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:20", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:20:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:20:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:25", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:25:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:25:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:30", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:30:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:30:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:35", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:35:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:35:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:40", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:40:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:40:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:45", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:45:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:45:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:50", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:50:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:50:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "02:55", 
+      "value": 0, 
+      "datetime": "2016-05-30T02:55:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T00:55:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "03:00", 
+      "value": 0, 
+      "datetime": "2016-05-30T03:00:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T01:00:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }, 
+    {
+      "time": "03:05", 
+      "value": 0, 
+      "datetime": "2016-05-30T03:05:00", 
+      "precipation": 0.0, 
+      "utcdatetime": "2016-05-30T01:05:00", 
+      "precipitation": 0.0, 
+      "original": 0
+    }
+  ], 
+  "timeOffset": 2.0, 
+  "radius": 2, 
+  "time": {
+    "init": 0, 
+    "chartitems": 0
+  }, 
+  "lat": 51.87, 
+  "borders": [
+    {
+      "upper": 40, 
+      "lower": 0, 
+      "title": "licht"
+    }, 
+    {
+      "upper": 70, 
+      "lower": 40, 
+      "title": "matig"
+    }, 
+    {
+      "upper": 100, 
+      "lower": 70, 
+      "title": "zwaar"
+    }
+  ], 
+  "emptytext": "Geen neerslag verwacht", 
+  "no_rain": true
+}

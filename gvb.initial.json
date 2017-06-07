@@ -1,0 +1,82 @@
+[
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "22:31", 
+    "date": 1464813067, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "22:39", 
+    "date": 1464813590, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "22:49", 
+    "date": 1464814190, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "22:59", 
+    "date": 1464814790, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:09", 
+    "date": 1464815390, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:19", 
+    "date": 1464815990, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:29", 
+    "date": 1464816590, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:39", 
+    "date": 1464817190, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:49", 
+    "date": 1464817790, 
+    "line": "21", 
+    "type": "BUS"
+  }, 
+  {
+    "direction": "Centraal Station", 
+    "stop": "Aalbersestraat", 
+    "nice_date": "23:59", 
+    "date": 1464818390, 
+    "line": "21", 
+    "type": "BUS"
+  }
+]

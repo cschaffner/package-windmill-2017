@@ -1,0 +1,54 @@
+#!/usr/bin/python
+import sys
+import time
+import pytz
+import itertools
+from calendar import timegm
+from datetime import datetime
+from shutil import copyfile
+
+from hosted import CONFIG, NODE
+CONFIG.restart_on_update()
+
+print >> sys.stderr, "now using playlist {0}".format(CONFIG['playlist'])
+copyfile("playlist_{}.json".format(CONFIG['playlist']), "playlist.json")
+
+# CONFIG = {"timezone": "Europe/Berlin"}
+
+diff = datetime(2017, 6, 9, 16, 00, 00) - datetime.utcnow()
+# diff = datetime.utcnow() - datetime.utcnow()
+
+lol = itertools.count()
+
+def current_time():
+    now = datetime.utcnow() + diff
+    timestamp = timegm(now.timetuple()) + now.microsecond / 1000000.
+    # timestamp += lol.next() * 120
+
+    return now, timestamp
+
+def send_clock(now, ts):
+    now = now.replace(tzinfo=pytz.utc)
+    now = now.astimezone(pytz.timezone(CONFIG['timezone']))
+    now = now.replace(tzinfo=None)
+    since_midnight = (
+        now -
+        now.replace(hour=0, minute=0, second=0, microsecond=0)
+    )
+    since_midnight = since_midnight.seconds + since_midnight.microseconds / 1000000.
+    NODE.send('/clock/unix:%f' % ts)
+    NODE.send('/clock/midnight:%f' % since_midnight)
+
+def main():
+    while 1:
+        now, ts = current_time()
+        if now.year < 2000:
+            print >>sys.stderr, "too soon"
+            time.sleep(1)
+            continue
+
+        send_clock(now, ts)
+        time.sleep(1)
+
+if __name__ == "__main__":
+    main()

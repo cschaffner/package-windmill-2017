@@ -1,0 +1,1010 @@
+{
+  "standings":[
+    {
+      "ranking":1,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29773,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29773/gb-mixed-national-team/",
+        "short_name":"GB Mixed",
+        "id":29773,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29773/",
+        "name":"GB Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:gb GB ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":2,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29775,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29775/germany-mixed-national-team/",
+        "short_name":"Germany Mixed",
+        "id":29775,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29775/",
+        "name":"Germany Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:de Germany ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":3,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29770,
+      "team_country":"fr",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29770/france-mixed-national-team/",
+        "short_name":"France Mixed",
+        "id":29770,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29770/",
+        "name":"France Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:fr France ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":4,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29780,
+      "team_country":"ie",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29780/ireland-mixed-team/",
+        "short_name":"Ireland Mixed",
+        "id":29780,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29780/",
+        "name":"Ireland Mixed Team"
+      },
+      "ties":0,
+      "team_name":"flag:ie Ireland ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":5,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29766,
+      "team_country":"cz",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29766/czech-republic-mixed-national-team/",
+        "short_name":"Czech Mixed",
+        "id":29766,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29766/",
+        "name":"Czech Republic Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:cz Czech ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":6,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29806,
+      "team_country":"us",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29806/sock-puppet-regime-change/",
+        "short_name":"Socks",
+        "id":29806,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29806/",
+        "name":"Sock Puppet Regime Change"
+      },
+      "ties":0,
+      "team_name":"flag:us Socks",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":7,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29763,
+      "team_country":"be",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29763/belgium-mixed-national-team/",
+        "short_name":"Belgium Mixed",
+        "id":29763,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29763/",
+        "name":"Belgium Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:be Belgium ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":8,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29789,
+      "team_country":"pl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29789/poland-mixed-national-team/",
+        "short_name":"Poland Mixed",
+        "id":29789,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29789/",
+        "name":"Poland Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:pl Poland ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":9,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29767,
+      "team_country":"dk",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29767/denmark-mixed-national-team/",
+        "short_name":"Denmark Mixed",
+        "id":29767,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29767/",
+        "name":"Denmark Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:dk Denmark ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":10,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29783,
+      "team_country":"us",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29783/mr-t-party/",
+        "short_name":"Mr. T Party",
+        "id":29783,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29783/",
+        "name":"Mr. T Party"
+      },
+      "ties":0,
+      "team_name":"flag:us Mr. T Party",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":11,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29774,
+      "team_country":"us",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29774/geos-disc-throwers/",
+        "short_name":"Geo's Disc T",
+        "id":29774,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29774/",
+        "name":"Geo's Disc Throwers"
+      },
+      "ties":0,
+      "team_name":"flag:us Geo's Disc T",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":12,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29785,
+      "team_country":"us",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29785/off-to-grandmas/",
+        "short_name":"OtGrandma's",
+        "id":29785,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29785/",
+        "name":"Off to Grandma's"
+      },
+      "ties":0,
+      "team_name":"flag:us OtGrandma's",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":13,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29805,
+      "team_country":"sk",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29805/slovakia-mixed-national-team/",
+        "short_name":"Slovakia Mixed",
+        "id":29805,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29805/",
+        "name":"Slovakia Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:sk Slovakia ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":14,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29788,
+      "team_country":"ca",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29788/pax6/",
+        "short_name":"Pax6",
+        "id":29788,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29788/",
+        "name":"Pax6"
+      },
+      "ties":0,
+      "team_name":"flag:ca Pax6",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":15,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29790,
+      "team_country":"pt",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29790/portugal-mixed-national-team/",
+        "short_name":"Portugal Mixed",
+        "id":29790,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29790/",
+        "name":"Portugal Mixed National Team "
+      },
+      "ties":0,
+      "team_name":"flag:pt Portugal ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":16,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29765,
+      "team_country":"us",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29765/brown-chicken-brown-cow/",
+        "short_name":"ChickenCow",
+        "id":29765,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29765/",
+        "name":"Brown Chicken Brown Cow "
+      },
+      "ties":0,
+      "team_name":"flag:us ChickenCow",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":17,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29764,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29764/black-eagles/",
+        "short_name":"Bleagles",
+        "id":29764,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29764/",
+        "name":"Black Eagles"
+      },
+      "ties":0,
+      "team_name":"flag:gb Bleagles",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":18,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29791,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29791/reading-ultimate/",
+        "short_name":"Reading",
+        "id":29791,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29791/",
+        "name":"Reading Ultimate"
+      },
+      "ties":0,
+      "team_name":"flag:gb Reading",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":19,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29776,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29776/glasgow-ultimate/",
+        "short_name":"Glasgow",
+        "id":29776,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29776/",
+        "name":"Glasgow Ultimate"
+      },
+      "ties":0,
+      "team_name":"flag:gb Glasgow",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":20,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29777,
+      "team_country":"nl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29777/grut/",
+        "short_name":"Grut",
+        "id":29777,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29777/",
+        "name":"Grut"
+      },
+      "ties":0,
+      "team_name":"flag:nl Grut",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":21,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29800,
+      "team_country":"ee",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29800/sexy-legs/",
+        "short_name":"Sexy Legs",
+        "id":29800,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29800/",
+        "name":"Sexy Legs"
+      },
+      "ties":0,
+      "team_name":"flag:ee Sexy Legs",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":22,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29779,
+      "team_country":"hu",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29779/hungary-mixed-national-team/",
+        "short_name":"Hungary Mixed",
+        "id":29779,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29779/",
+        "name":"Hungary Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:hu Hungary ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":23,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29809,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29809/wurzburg-disc-o-fever/",
+        "short_name":"Disc-o-Fever",
+        "id":29809,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29809/",
+        "name":"Würzburg Disc-o-Fever"
+      },
+      "ties":0,
+      "team_name":"flag:de Disc-o-Fever",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":24,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29808,
+      "team_country":"at",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29808/wunderteam/",
+        "short_name":"Wunderteam",
+        "id":29808,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29808/",
+        "name":"Wunderteam"
+      },
+      "ties":0,
+      "team_name":"flag:at Wunderteam",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":25,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29782,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29782/mainzelrenner/",
+        "short_name":"Mainz",
+        "id":29782,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29782/",
+        "name":"Mainzelrenner"
+      },
+      "ties":0,
+      "team_name":"flag:de Mainz",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":26,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29784,
+      "team_country":"no",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29784/norway-mixed-national-team/",
+        "short_name":"Norway Mixed",
+        "id":29784,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29784/",
+        "name":"Norway Mixed National Team"
+      },
+      "ties":0,
+      "team_name":"flag:no Norway ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":27,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29772,
+      "team_country":"fr",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29772/friselis/",
+        "short_name":"Friselis",
+        "id":29772,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29772/",
+        "name":"Friselis"
+      },
+      "ties":0,
+      "team_name":"flag:fr Friselis",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":28,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29758,
+      "team_country":"co",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29758/2600/",
+        "short_name":"2600",
+        "id":29758,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29758/",
+        "name":"2600"
+      },
+      "ties":0,
+      "team_name":"flag:co 2600",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":29,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29793,
+      "team_country":"nl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29793/rusty-bikes/",
+        "short_name":"Rusty Bikes",
+        "id":29793,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29793/",
+        "name":"Rusty Bikes"
+      },
+      "ties":0,
+      "team_name":"flag:nl Rusty Bikes",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":30,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29771,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29771/frau-rauscher-the-bembelboys/",
+        "short_name":"FR & BB",
+        "id":29771,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29771/",
+        "name":"Frau Rauscher & the Bembelboys"
+      },
+      "ties":0,
+      "team_name":"flag:de FR & BB",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":31,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29778,
+      "team_country":"es",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29778/guayota/",
+        "short_name":"Guayota",
+        "id":29778,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29778/",
+        "name":"Guayota"
+      },
+      "ties":0,
+      "team_name":"flag:es Guayota",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":32,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29781,
+      "team_country":"ie",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29781/jabba-the-huck/",
+        "short_name":"Jabba",
+        "id":29781,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29781/",
+        "name":"Jabba The Huck"
+      },
+      "ties":0,
+      "team_name":"flag:ie Jabba",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":33,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29807,
+      "team_country":"ch",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29807/wombat-ultimate-willisau/",
+        "short_name":"Wombat",
+        "id":29807,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29807/",
+        "name":"Wombat Ultimate Willisau"
+      },
+      "ties":0,
+      "team_name":"flag:ch Wombat",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":34,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29760,
+      "team_country":"nl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29760/airborn/",
+        "short_name":"Airborn",
+        "id":29760,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29760/",
+        "name":"Airborn"
+      },
+      "ties":0,
+      "team_name":"flag:nl Airborn",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":35,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29759,
+      "team_country":"pl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29759/4hands/",
+        "short_name":"4hands",
+        "id":29759,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29759/",
+        "name":"4hands"
+      },
+      "ties":0,
+      "team_name":"flag:pl 4hands",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":36,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29768,
+      "team_country":"es",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29768/discterics-ultimate-girona/",
+        "short_name":"Disctèrics",
+        "id":29768,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29768/",
+        "name":"Disctèrics Ultimate Girona"
+      },
+      "ties":0,
+      "team_name":"flag:es Disctèrics",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":37,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29792,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29792/rubiks-cube/",
+        "short_name":"Rubik's Cube",
+        "id":29792,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29792/",
+        "name":"Rubik's Cube"
+      },
+      "ties":0,
+      "team_name":"flag:de Rubik's Cube",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":38,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29762,
+      "team_country":"by",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29762/baby-seals/",
+        "short_name":"Baby seals",
+        "id":29762,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29762/",
+        "name":"Baby seals"
+      },
+      "ties":0,
+      "team_name":"flag:by Baby seals",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":39,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29786,
+      "team_country":"il",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29786/oy-vey-element/",
+        "short_name":"Oy Vey! ",
+        "id":29786,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29786/",
+        "name":"Oy Vey! (Element)"
+      },
+      "ties":0,
+      "team_name":"flag:il Oy Vey! ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":40,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29769,
+      "team_country":"tr",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29769/durum-team/",
+        "short_name":"Dürüm",
+        "id":29769,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29769/",
+        "name":"Dürüm Team"
+      },
+      "ties":0,
+      "team_name":"flag:tr Dürüm",
+      "avg_goal_difference":"0.00"
+    }
+  ],
+  "round_name":"Round 1",
+  "start_time":"Fri 11:15",
+  "games":[
+    {
+      "field":"Field 1 stadium",
+      "team_1_country":"pl",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Poland ",
+      "team_2":"2600",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"co",
+      "field_nr":"1"
+    },
+    {
+      "field":"Field 2 stadium",
+      "team_1_country":"us",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Mr. T Party",
+      "team_2":"FR & BB",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"de",
+      "field_nr":"2"
+    },
+    {
+      "field":"Field 3 far",
+      "team_1_country":"fr",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"France ",
+      "team_2":"Disc-o-Fever",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"de",
+      "field_nr":"3"
+    },
+    {
+      "field":"Field 4 far",
+      "team_1_country":"ie",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Ireland ",
+      "team_2":"Wunderteam",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"at",
+      "field_nr":"4"
+    },
+    {
+      "field":"Field 5 far",
+      "team_1_country":"cz",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Czech ",
+      "team_2":"Mainz",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"de",
+      "field_nr":"5"
+    },
+    {
+      "field":"Field 6 far",
+      "team_1_country":"us",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Socks",
+      "team_2":"Norway ",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"no",
+      "field_nr":"6"
+    },
+    {
+      "field":"Field 7 far",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"GB ",
+      "team_2":"Sexy Legs",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"ee",
+      "field_nr":"7"
+    },
+    {
+      "field":"Field 8",
+      "team_1_country":"dk",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Denmark ",
+      "team_2":"Rusty Bikes",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"nl",
+      "field_nr":"8"
+    },
+    {
+      "field":"Field 9",
+      "team_1_country":"be",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Belgium ",
+      "team_2":"Friselis",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"fr",
+      "field_nr":"9"
+    },
+    {
+      "field":"Field 10",
+      "team_1_country":"de",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Germany ",
+      "team_2":"Hungary ",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"hu",
+      "field_nr":"10"
+    },
+    {
+      "field":"Field 11",
+      "team_1_country":"us",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Geo's Disc T",
+      "team_2":"Guayota",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"es",
+      "field_nr":"11"
+    },
+    {
+      "field":"Field 12 art turf",
+      "team_1_country":"us",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"OtGrandma's",
+      "team_2":"Jabba",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"ie",
+      "field_nr":"12"
+    },
+    {
+      "field":"Field 13 art turf",
+      "team_1_country":"sk",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Slovakia ",
+      "team_2":"Wombat",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"ch",
+      "field_nr":"13"
+    },
+    {
+      "field":"Field 14 art turf",
+      "team_1_country":"us",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"ChickenCow",
+      "team_2":"Disctèrics",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"es",
+      "field_nr":"14"
+    },
+    {
+      "field":"Field 15 art turf",
+      "team_1_country":"pt",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Portugal ",
+      "team_2":"4hands",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"pl",
+      "field_nr":"15"
+    },
+    {
+      "field":"Field 16",
+      "team_1_country":"ca",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Pax6",
+      "team_2":"Airborn",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"nl",
+      "field_nr":"16"
+    },
+    {
+      "field":"Field 17",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Bleagles",
+      "team_2":"Rubik's Cube",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"de",
+      "field_nr":"17"
+    },
+    {
+      "field":"Field 18",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Reading",
+      "team_2":"Baby seals",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"by",
+      "field_nr":"18"
+    },
+    {
+      "field":"Field 19",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Glasgow",
+      "team_2":"Oy Vey! ",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"il",
+      "field_nr":"19"
+    },
+    {
+      "field":"Field 20",
+      "team_1_country":"nl",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Grut",
+      "team_2":"Dürüm",
+      "is_final":false,
+      "start_time":"Fri 11:15",
+      "team_2_country":"tr",
+      "field_nr":"20"
+    }
+  ],
+  "time_last_updated_unix":1464809417,
+  "start_time_unix":1464945300
+}

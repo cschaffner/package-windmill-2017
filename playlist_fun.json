@@ -1,0 +1,100 @@
+[{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_bikedetail.mp4",
+                "duration": 15,
+                "raw": false,
+                "text": "Try it, it's fun!"
+            }
+        ]
+    },
+    "chance": 0.4
+},
+{
+    "module": "text",
+    "options": {
+        "text": "Recorded an awesome 10-second video? Bring it to HQ and we'll show it right here!"
+    },
+    "chance": 0.6
+},
+{
+    "module": "swissgames",
+    "chance": 0.2,
+    "options": {
+        "duration": 20
+    }
+}, {
+    "module": "playoff",
+    "chance": 0.2,
+    "options": {
+        "duration": 20
+    }
+},{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_tank.mp4",
+                "duration": 10,
+                "raw": false,
+                "text": "SPLASH!"
+            }
+        ]
+    },
+    "chance": 0.8
+},
+{
+    "module": "teams",
+    "chance": 0.5,
+    "options": {
+        "duration": 20
+    }
+
+}, {
+    "module": "text",
+    "options": {
+        "text": "Make your own screens? Check out https://info-beamer.com "
+    },
+    "chance": 0.6
+},{
+    "module": "twitter",
+    "chance": 0.6
+}, {
+    "module": "weather",
+    "chance": 0.3,
+    "options": {
+        "duration": 15
+    }
+
+},{
+    "module": "images",
+    "chance": 0.6
+},{
+    "module": "ads",
+    "chance": 0.6
+},{
+    "module": "gvb",
+    "chance": 0.6,
+    "hours": "0 18 19 20 21 22 23 24"
+},{
+    "module": "text",
+    "options": {
+        "text": "Swiss Score, eh? If Team A with a Swiss Score of 3.0 plays Team B with Swiss Score of -2.0, A is expected to win by 5."
+    },
+    "chance": 0.6
+},{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_bikes.mp4",
+                "duration": 16,
+                "raw": false,
+                "text": "Windmill"
+            }
+        ]
+    },
+    "chance": 0.4
+}]

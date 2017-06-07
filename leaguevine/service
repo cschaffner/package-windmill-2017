@@ -1,0 +1,603 @@
+#!/usr/bin/python
+import sys
+
+sys.path.append('..')
+import os
+import time
+import pytz
+import json
+import requests
+import traceback
+import calendar
+import re
+from operator import itemgetter
+from copy import deepcopy
+
+from dateutil import parser
+from datetime import datetime, timedelta
+from calendar import timegm
+
+from hosted import CONFIG
+CONFIG.restart_on_update()
+
+# with file("config.json") as f:
+#     CONFIG = json.load(f)
+
+with file(CONFIG['lv_data_source']) as f:
+# with file("windmill2016_test.json") as f:
+# with file("windmill2015.json") as f:
+    WINDMILL = json.load(f)
+for division in ['open', 'mixed', 'women']:
+    for round in WINDMILL['schedule'][division]:
+        if round['name'][:6] == 'Round ':
+            round['round_number'] = int(round['name'][-1])
+
+MET = pytz.timezone('Europe/Amsterdam')
+
+TOURNAMENTS = {}  # = Windmill divisions
+TEAMS = {}
+SCHEDULE = WINDMILL['schedule']
+BRACKETS = {}
+
+TIMEDIFF = datetime(2017, 6, 9, 16, 00, 00) - datetime.utcnow()
+# TIMEDIFF = datetime.now() - datetime.now()
+
+# HOST = 'https://api.leaguevine.com/v1'.format(CONFIG['lv_server'])
+# LOCALHOST = 'http://api.localhost:8000/v1'
+# LOCALHOST = 'http://192.168.10.38:8000/api/v1'
+
+print('current host is {0}'.format(CONFIG['leaguevine_server']))
+if CONFIG['leaguevine_server'] == 'local':
+    HOST = 'http://192.168.10.38:8000/api/v1'
+elif CONFIG['leaguevine_server'] == 'playwithlv':
+    HOST = 'http://api.playwithlv.com/v1'
+else:
+    HOST = 'https://api.leaguevine.com/v1'
+
+# HOST = LOCALHOST
+
+def MET_to_unix(dt):
+    dt = MET.localize(dt)
+    dt = dt.astimezone(pytz.utc)
+    dt = dt.replace(tzinfo=None)
+    return int(timegm(dt.timetuple()))
+
+
+def lastround(datetime):
+    # which round is currently being played?
+    lastround = WINDMILL['schedule']['open'][0]
+    lastround_start = datetime.strptime(lastround['start'], '%Y-%m-%dT%H:%M:%S')
+    for round in WINDMILL['schedule']['open']:
+        round_start = datetime.strptime(round['start'], '%Y-%m-%dT%H:%M:%S')
+        round_end = datetime.strptime(round['end'], '%Y-%m-%dT%H:%M:%S')
+        if round_start > lastround_start:
+            lastround = round
+
+    return lastround
+
+
+def update(division='open'):
+    global TEAMS, SCHEDULE, BRACKETS   # required as those will be changed here
+    print >> sys.stderr, "{0} division: starting to update data from leaguevine".format(division)
+
+    tournament_id = WINDMILL['tournaments'][division]['tournament_id']
+    # pull data from leaguevine
+    r = requests.get('{0}/brackets/?tournament_id={1}'.format(HOST, tournament_id))
+    division_brackets = r.json()['objects']
+    BRACKETS[division] = {'lv': division_brackets}
+
+    main_bracket = next((x for x in BRACKETS[division]['lv'] if len(x['rounds']) == 3), None)
+    for round in main_bracket['rounds']:
+        if round['round_number'] == 2:
+            # Quarterfinals
+            for i, game in enumerate(round['games']):
+                game_name = 'QF{0}'.format(i)
+                BRACKETS[division][game_name] = game
+        elif round['round_number'] == 1:
+            # Semifinals
+            for i, game in enumerate(round['games']):
+                game_name = 'SF{0}'.format(i)
+                BRACKETS[division][game_name] = game
+        elif round['round_number'] == 0:
+            # Final
+            for i, game in enumerate(round['games']):
+                game_name = 'Fin12'
+                BRACKETS[division][game_name] = game
+
+    loser_bracket = next((x for x in BRACKETS[division]['lv'] if len(x['rounds']) == 2), None)
+    for round in loser_bracket['rounds']:
+        if round['round_number'] == 1:
+            # loser semis
+            for i, game in enumerate(round['games'], start=2):
+                game_name = 'SF{0}'.format(i)
+                BRACKETS[division][game_name] = game
+        elif round['round_number'] == 0:
+            # 5/6
+            for i, game in enumerate(round['games']):
+                game_name = 'Fin56'
+                BRACKETS[division][game_name] = game
+
+    bronze_game = next((x for x in BRACKETS[division]['lv'] if 'bronze' in x['name']), None)
+    if len(bronze_game['rounds']) > 1 or len(bronze_game['rounds'][0]['games']) > 1:
+        print >> sys.stderr, "error: problem with updating bracket bronze game"
+    else:
+        game = bronze_game['rounds'][0]['games'][0]
+        game_name = 'Fin34'
+        BRACKETS[division][game_name] = game
+
+    game78 = next((x for x in BRACKETS[division]['lv'] if x['name'] == 'game for 7-8'), None)
+    if len(game78['rounds']) > 1 or len(game78['rounds'][0]['games']) > 1:
+        print >> sys.stderr, "error: problem with updating bracket game for place 7-8"
+    else:
+        game = game78['rounds'][0]['games'][0]
+        game_name = 'Fin78'
+        BRACKETS[division][game_name] = game
+
+    # update swissrounds
+    r = requests.get('{0}/swiss_rounds/?tournament_id={1}'.format(HOST, tournament_id))
+    if r.status_code != 200:
+        print >> sys.stderr, "error retrieving data from leaguevine ({0}: {1})".format(r.status_code, r.reason)
+        return False
+    swiss_rounds = r.json()['objects']
+    # update schedule with extra information
+    for swiss_round in swiss_rounds:
+        # find the round in SCHEDULE[division] which corresponds to this swissround
+        if len(swiss_round['games']) > 0:
+            swiss_round_start_time = swiss_round['games'][0]['start_time'][0:19]
+        else:
+            swiss_round_start_time = swiss_round['start_time'][0:19]
+
+        round = next((round for round in SCHEDULE[division] if round['start'] == swiss_round_start_time), None)
+        if not round:
+            print >> sys.stderr, "{0} division: no matching round found, serious error! trying to fix by comparing round numbers..".format(division)
+            round = next((x for x in SCHEDULE[division] if x['round_number'] == swiss_round['round_number']), None)
+            if not round:
+                print >> sys.stderr, "{0} division: comparing round number did not work either. Cannot update division!".format(
+                    division)
+                return False
+            else:
+                print >> sys.stderr, "{0} division: That worked! :-)".format(division)
+
+        round.update(swiss_round)
+        # update rankings if we are in playoff phase
+        if round['round_number'] > 5:
+            for stand in round['standings']:
+                stand['ranking'] += 8
+
+        if round['round_number'] == 6:  # quarter-finals
+            qf_looping = [('QF0', 1, 8), ('QF1', 5, 4), ('QF2', 3, 6), ('QF3', 7, 2)]
+            for qf_name, rank_1, rank_2 in qf_looping:
+                qf = BRACKETS[division][qf_name]
+                if qf['winner_id']:
+                    winner_id = qf['winner_id']
+                    loser_id = [id for id in [qf['team_1_id'], qf['team_2_id']] if id != winner_id][0]
+                    win_stand = {"ranking": 1,
+                                 "team_id": winner_id,
+                                 "swiss_score": 'top 4'}
+                    loose_stand = {"ranking": 5,
+                                   "team_id": loser_id,
+                                   "swiss_score": 'rk 5-8'}
+                else:  # no winner yet
+                    winner_id = qf['team_1_id']
+                    loser_id = qf['team_2_id']
+                    win_stand = {"ranking": rank_1,
+                                 "team_id": winner_id,
+                                 "swiss_score": 'QF'}
+                    loose_stand = {"ranking": rank_2,
+                                   "team_id": loser_id,
+                                   "swiss_score": 'QF'}
+                round['standings'].append(win_stand)
+                round['standings'].append(loose_stand)
+                game = next((game for game in round['games'] if game['id']==qf['id']), None)
+                if game:
+                    game = qf
+                else:
+                    round['games'].append(qf)
+
+        elif round['round_number'] == 7:  # semi-finals
+            sf_looping = [('SF0', 1, 'top 2', 3, 'rk 3-4'), ('SF1', 1, 'top 2', 3, 'rk 3-4'), ('SF2', 5, 'rk 5-6', 7, 'rk 7-8'), ('SF3', 5, 'rk 5-6', 7, 'rk 7-8')]
+            for sf_name, rank_1, rank_1_score, rank_2, rank_2_score in sf_looping:
+                sf = BRACKETS[division][sf_name]
+                if sf['winner_id']:
+                    winner_id = sf['winner_id']
+                    loser_id = [id for id in [sf['team_1_id'], sf['team_2_id']] if id != winner_id][0]
+                    win_stand = {"ranking": rank_1,
+                                 "team_id": winner_id,
+                                 "swiss_score": rank_1_score}
+                    loose_stand = {"ranking": rank_2,
+                                   "team_id": loser_id,
+                                   "swiss_score": rank_2_score}
+                else:  # no winner yet
+                    winner_id = sf['team_1_id']
+                    loser_id = sf['team_2_id']
+                    win_stand = {"ranking": rank_1,
+                                 "team_id": winner_id,
+                                 "swiss_score": 'sf'}
+                    loose_stand = {"ranking": rank_1,
+                                   "team_id": loser_id,
+                                   "swiss_score": 'sf'}
+                round['standings'].append(win_stand)
+                round['standings'].append(loose_stand)
+                game = next((game for game in round['games'] if game['id']==sf['id']), None)
+                if game:
+                    game = sf
+                else:
+                    round['games'].append(sf)
+
+        elif round['round_number'] == 8:  # finals
+            fin_looping = [('Fin12', 1, 'gold', 2, 'silver'), ('Fin34', 3, 'bronze', 4, ''),
+                           ('Fin56', 5, '', 6, ''), ('Fin78', 7, '', 8, '') ]
+            for fin_name, rank_1, rank_1_score, rank_2, rank_2_score in fin_looping:
+                fin = BRACKETS[division][fin_name]
+                if fin['winner_id']:
+                    winner_id = fin['winner_id']
+                    loser_id = [id for id in [fin['team_1_id'], fin['team_2_id']] if id != winner_id][0]
+                    win_stand = {"ranking": rank_1,
+                                 "team_id": winner_id,
+                                 "swiss_score": rank_1_score}
+                    loose_stand = {"ranking": rank_2,
+                                   "team_id": loser_id,
+                                   "swiss_score": rank_2_score}
+                else:  # no winner yet
+                    winner_id = fin['team_1_id']
+                    loser_id = fin['team_2_id']
+                    win_stand = {"ranking": rank_1,
+                                 "team_id": winner_id,
+                                 "swiss_score": fin_name}
+                    loose_stand = {"ranking": rank_1,
+                                   "team_id": loser_id,
+                                   "swiss_score": fin_name}
+                round['standings'].append(win_stand)
+                round['standings'].append(loose_stand)
+                game = next((game for game in round['games'] if game['id']==fin['id']), None)
+                if game:
+                    game = fin
+                else:
+                    round['games'].append(fin)
+
+
+        round['standings'] = sorted(round['standings'], key=itemgetter('ranking'))
+        if round['round_number'] == 8: # finals
+            # add standings also to final
+            final_round = next((round for round in SCHEDULE[division] if round['name'] == "Final"), None)
+            final_round['standings'] = round['standings']
+
+        for game in round['games']:
+            if game['team_1_id'] and game['team_2_id']:
+                stand = [stand for stand in round['standings'] if stand['team_id']==game['team_1_id']][0]
+                opponent_name, opponent_country = team_info(division, game['team_2'])
+                TEAMS[game['team_1_id']]['games'][round['name']] = {
+                    'opponent_id': game['team_2_id'],
+                    'opponent': opponent_name,
+                    'opponent_country': opponent_country,
+                    'own_score': game['team_1_score'],
+                    'opponent_score': game['team_2_score'],
+                    'is_final': game['winner_id'] is not None,
+                    'own_standing': stand,
+                    'round_name': round['name'],
+                    'round_number': round['round_number'],
+                    'round_start_time': round['start_time']
+                    }
+                stand = [stand for stand in round['standings'] if stand['team_id']==game['team_2_id']][0]
+                opponent_name, opponent_country = team_info(division, game['team_1'])
+                TEAMS[game['team_2_id']]['games'][round['name']] = {
+                    'opponent_id': game['team_1_id'],
+                    'opponent': opponent_name,
+                    'opponent_country': opponent_country,
+                    'own_score': game['team_2_score'],
+                    'opponent_score': game['team_1_score'],
+                    'is_final': game['winner_id'] is not None,
+                    'own_standing': stand,
+                    'round_name': round['name'],
+                    'round_number': round['round_number'],
+                    'round_start_time': round['start_time']
+                }
+
+
+    print >> sys.stderr, "{0} division: finished to update data from leaguevine".format(division)
+
+
+def drop_division(division, name_string):
+    if name_string[:5] == 'Test ':
+        name_string = name_string[5:]
+    name_string = name_string.replace(division + ' ', '')
+    name_string = name_string.replace(division.capitalize() + ' ', '')
+    name_string = name_string.replace(division, '')
+    name_string = name_string.replace(division.capitalize(), '')
+    return name_string
+
+
+def team_info(division, team_dict):
+    """
+    :param team_dict:
+    :return: tuple consisting of team_dict['short_name'] cleaned from division name, and the teams country
+    """
+    team_name = drop_division(division, team_dict['short_name'])
+    country = TEAMS[team_dict['id']]['country'].lower()
+    return team_name, country
+
+def game_to_dict(division, game):
+    # takes in a leaguevine game, and returns a dictionary with the relevant information
+    start_time = datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00')
+    game_dict = { 'team_1': '',
+                  'team_2': '',
+                  'team_1_country': '',
+                  'team_2_country': '',
+                  'field': '',
+                  'field_nr': '',
+                  'team_1_score': game['team_1_score'],
+                  'team_2_score': game['team_2_score'],
+                  'is_final': game['winner_id'] is not None,
+                  'start_time': start_time.strftime('%a %-H:%M'),
+                  }
+    if game['team_1']:
+        game_dict['team_1'], game_dict['team_1_country'] = team_info(division, game['team_1'])
+    if game['team_2']:
+        game_dict['team_2'], game_dict['team_2_country'] = team_info(division, game['team_2'])
+    if game['game_site']:
+        game_dict['field'] = game['game_site']['name']
+        game_dict['field_nr'] = game['game_site']['name'].split(' ')[1]
+        # game_dict['field_nr'] = int(re.sub("[^0-9]", "", game['game_site']['name']))
+
+    return game_dict
+
+
+def get_team_stand(team_id):
+    """
+    :param team_id:
+    :return: returns the latest standing of team with team_id
+    """
+    team = TEAMS[team_id]
+    # determine the latest available numerical swiss_score
+    last_round_nr = 0
+    num_swiss_score = 0
+    for round_name, game in team['games'].iteritems():
+        try:
+            round_swiss_score = float(game['own_standing']['swiss_score'])
+        except ValueError:
+            round_swiss_score = None
+        if round_swiss_score and game['round_number'] > last_round_nr:
+            num_swiss_score = round_swiss_score
+            last_round_nr = game['round_number']
+
+    last_round_nr = 0
+    stand = {}
+    for round_name, game in team['games'].iteritems():
+        if game['round_number'] > last_round_nr:
+            stand = game['own_standing']
+            last_round_nr = game['round_number']
+
+    stand['num_swiss_score'] = '{}'.format(num_swiss_score)
+    return stand
+
+def current_teams():
+    """
+    writes all team data into current_teams.json
+    :return:
+    """
+    team_list = [team for (team_id, team) in TEAMS.iteritems()]
+    team_list_copy = deepcopy(team_list)
+    for team in team_list_copy:
+        team['country'] = team['country'].lower()
+        team['games'] = [game for (round_name, game) in team['games'].iteritems()]
+        sorted(team['games'], key=itemgetter('round_start_time'))
+        team['current_standing'] = get_team_stand(team['id'])
+        for game in team['games']:
+            game['opponent_standing'] = get_team_stand(game['opponent_id'])
+            try:
+                game['swiss_score_diff'] = u'{0:+6.2f}'.format(float(team['current_standing']['num_swiss_score'])-float(game['opponent_standing']['num_swiss_score']))
+            except ValueError:
+                pass
+            if game['is_final']:
+                game['score_diff'] = u'{0:+2.0f}'.format(game['own_score']-game['opponent_score'])
+
+    with file("current_teams.json.new", "wb") as f:
+        f.write(json.dumps(team_list_copy,
+                           ensure_ascii=False,
+                           indent=2,
+                           separators=(',', ':')
+                           ).encode('utf8'))
+    os.rename("current_teams.json.new", "../current_teams.json")
+
+    print >> sys.stderr, "updated {0} current teams".format(len(TEAMS))
+
+
+def current_brackets(division='open'):
+    """
+    writes playoff bracket games into current_brackets_DVISION.json
+    :param division:
+    :return:
+    """
+    print >> sys.stderr, "{0} division: starting to write new brackets ".format(division)
+
+    curgames = []
+    for game_name in ['QF0', 'QF1', 'QF2', 'QF3', 'SF0', 'SF1', 'SF2', 'SF3', 'Fin12', 'Fin34', 'Fin56', 'Fin78']:
+        game_dict = game_to_dict(division, BRACKETS[division][game_name])
+        game_dict['name'] = game_name
+        curgames.append(game_dict)
+
+    with file("current_brackets.json.new", "wb") as f:
+        f.write(json.dumps(curgames,
+                           ensure_ascii=False,
+                           indent=2,
+                           separators=(',', ':')
+                           ).encode('utf8'))
+    os.rename("current_brackets.json.new", "../current_brackets_{0}.json".format(division))
+
+    print >> sys.stderr, "{0} division: updated current brackets".format(division)
+
+
+def current_games(division='open', current_datetime=datetime.now()):
+    """
+    retrieves "current games" from leaguevine and writes those into current_games_DIVISION.json
+    together with current standings
+    assumes Windmill tournament structure
+    :param division:
+    :param current_datetime:
+    :return:
+    """
+    # global TEAMS   # required because those will be changed here!
+    print >> sys.stderr, "{0} division: starting to write new current games (time: {1})".format(division, current_datetime)
+
+    tournament_id = WINDMILL['tournaments'][division]['tournament_id']
+
+    # Check for games in this tournament that start later than now
+    url = '{0}/games/'.format(HOST)
+    payload = {'tournament_id': tournament_id,
+               'starts_after': current_datetime.strftime('%Y-%m-%dT%H:%M:%S+02:00'),
+               'limit': 22,
+               'order_by': "['start_time','game_site_id']"}
+    r = requests.get(url, params=payload)
+    # if r.json()['meta']['total_count'] > 20+12: # the 12 playoff games are also loaded here...
+    #     print >> sys.stderr, "warning: loaded {0} games instead of a single round".format(r.json()['meta']['total_count'])
+
+    allbrackets = True
+    for game in r.json()['objects']:
+        if not game['bracket_id']:
+            allbrackets = False
+            break
+    if allbrackets or r.json()['meta']['total_count'] == 0:
+        print >> sys.stderr, "{0} division: not found any (non-bracket) upcoming games, searching for passed games instead".format(division)
+        payload['starts_before'] = current_datetime.strftime('%Y-%m-%dT%H:%M:%S+02:00')
+        payload.pop('starts_after')
+        payload['order_by'] = "['-start_time','game_site_id']"
+        r = requests.get(url, params=payload)
+        if r.json()['meta']['total_count'] == 0:
+            print >> sys.stderr, "error: no games found"
+            return False
+
+    games = r.json()['objects']
+    games_start = datetime.strptime(games[0]['start_time'], '%Y-%m-%dT%H:%M:%S+02:00')
+
+    curgames = {'games': []}
+    for game in games:
+        if game['team_2_id'] and datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00') == games_start:
+            # not a  BYE  and  same start as first game
+            curgames['games'].append(game_to_dict(division, game))
+
+    # fill in more round data
+    round = next((round for round in WINDMILL['schedule'][division] if datetime.strptime(round['start'], '%Y-%m-%dT%H:%M:%S') == games_start), None)
+    if not round:
+        print >> sys.stderr, "division {0}: no suitable round data found! trying to fix by comparing round numbers..".format(division)
+        round = next((round for round in WINDMILL['schedule'][division] if round['round_number'] == games[0]['swiss_round']['round_number']), None)
+        if not round:
+            print >> sys.stderr, "{0} division: comparing round number did not work either. no suitable round data found!".format(
+                division)
+        else:
+            print >> sys.stderr, "{0} division: that worked! ;-)".format(division)
+
+    if round:
+        round_start = datetime.strptime(round['start'], '%Y-%m-%dT%H:%M:%S')
+        curgames['start_time'] = round_start.strftime('%a %-H:%M')
+        curgames['start_time_unix'] = MET_to_unix(round_start)
+        curgames['round_name'] = round['name']
+        if 'standings' in round.keys():
+            curgames['standings'] = round['standings']
+            for stand in curgames['standings']:
+                stand['team_country'] = TEAMS[stand['team_id']]['country'].lower()
+                stand['team_name'] = u'flag:{0} {1}'.format(TEAMS[stand['team_id']]['country'].lower(), drop_division(division, TEAMS[stand['team_id']]['short_name']))
+        else:
+            print >> sys.stderr, "division {0}, {1}: no standings found!".format(division, round['name'])
+
+        if 'time_last_updated' not in round.keys():
+            print >> sys.stderr, "division {0}: round {1} has not been updated yet...".format(division, round['name'])
+        else:
+            round_last_updated = parser.parse(round['time_last_updated'])
+            curgames['time_last_updated_unix'] = int(timegm(round_last_updated.timetuple()))
+
+
+
+    with file("current_games.json.new", "wb") as f:
+        f.write(json.dumps(curgames,
+                           ensure_ascii=False,
+                           indent=2,
+                           separators=(',', ':')
+                           ).encode('utf8'))
+    os.rename("current_games.json.new", "../current_games_{0}.json".format(division))
+
+    print >> sys.stderr, "{0} division: updated current games and standings".format(division)
+
+
+def leaguevine_basic_info():
+    """
+    retrieves TOURNAMENTS as stored in global variable WINDMILL['tournaments']
+    collects TEAMS and queries those from leaguevine
+    :return: fills the global team
+    """
+    global TEAMS, TOURNAMENTS  # will be changed in here
+    tournament_ids = [t['tournament_id'] for name, t in WINDMILL['tournaments'].items()]
+    # retrieve tournament info  ( = Windmill divisions)
+    url = '{0}/tournaments/'.format(HOST)
+    payload = {'tournament_ids': '{0}'.format(tournament_ids).replace(' ', '')}
+    r = requests.get(url, params=payload)
+    TOURNAMENTS = r.json()['objects']
+
+    # retrieve tournament TEAMS (to figure out which TEAMS are playing in which TOURNAMENTS
+    payload['fields'] = '[team_id,tournament_id]'
+    payload['limit'] = 200
+    r = requests.get('{0}/tournament_teams/'.format(HOST), params=payload)
+    tournament_teams = r.json()
+    if tournament_teams['meta']['next']:
+        print >> sys.stderr, "only 200 TEAMS were loaded, but there are more!"
+    all_team_ids = []
+    for tournament in TOURNAMENTS:
+        tournament['team_ids'] = [x['team_id'] for x in tournament_teams['objects'] if x['tournament_id'] == tournament['id']]
+        all_team_ids.extend(tournament['team_ids'])
+    # make all_team_ids unique and sorted
+    all_team_ids = sorted(set(all_team_ids))
+
+    # retrieve all team info
+    url = '{0}/teams/'.format(HOST)
+    payload = {'team_ids': '{0}'.format(all_team_ids).replace(' ', ''),
+               'limit': 200}
+    r = requests.get(url, params=payload)
+    result = r.json()
+    TEAMS = {team['id']: team for team in result['objects']}
+    for team_id, team in TEAMS.iteritems(): # initialize empty list of games
+        team['games'] = {}
+        tournament_id = next((x['tournament_id'] for x in tournament_teams['objects'] if x['team_id']==team['id']), None)
+        team['division'] = next(division_name for division_name, tournament in WINDMILL['tournaments'].iteritems() if tournament['tournament_id']==tournament_id)
+
+    return True
+
+
+def main():
+
+    leaguevine_basic_info()
+    # update('mixed')
+    # current_games('mixed', datetime(2016, 04, 16, 22, 31, 00))
+    # current_brackets('mixed')
+    #
+    # return True
+    while 1:
+        for division in ['open', 'mixed', 'women']:
+        # for division in ['women']:
+            try:
+                update(division)
+                current_brackets(division)
+                # current_games(division, datetime.now() + TIMEDIFF)
+                now = datetime.utcnow() + TIMEDIFF
+                now = now.replace(tzinfo=pytz.utc)
+                now = now.astimezone(pytz.timezone('Europe/Amsterdam'))
+                now = now.replace(tzinfo=None)
+
+                current_games(division, now)
+                # current_games(division, datetime(2016,6,3,12,15))
+                # current_games(division, datetime(2015,6,3,12,15))
+
+            except:
+                print >> sys.stderr, "failed to update {0} division".format(division)
+                traceback.print_exc()
+                # time.sleep(20)
+                continue
+        try:
+            current_teams()
+        except:
+            print >> sys.stderr, "failed to update current teams"
+            traceback.print_exc()
+
+        time.sleep(150)
+
+
+if __name__ == "__main__":
+    main()

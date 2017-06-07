@@ -1,0 +1,166 @@
+#!/usr/bin/python
+import os
+import time
+import json
+import pytz
+import requests
+
+# from StringIO import StringIO
+from cStringIO import StringIO
+from PIL import Image
+from math import floor
+from datetime import datetime, timedelta
+
+from xml.etree import ElementTree
+
+MET = pytz.timezone("Europe/Amsterdam")
+
+
+def get_rain():
+    # r = requests.get('http://gps.buienradar.nl/getrr.php?lat=52.3796198&lon=4.7898874')
+    # r = requests.get('http://gps.buienradar.nl/getrr.php?lat=50.10&lon=6.93')
+    r = requests.get('https://graphdata.buienradar.nl/forecast/json/?lat=52.38&lon=4.787')
+    # r = requests.get('https://graphdata.buienradar.nl/forecast/json/?lat=51.448&lon=4.182')
+    rain_data = r.json()
+
+
+    total_value = sum(item['value'] for item in rain_data['forecasts'])
+    rain_data['no_rain'] = total_value == 0
+
+    for data in rain_data['forecasts']:
+        data['time'] = data['datetime'][11:16]
+
+    return json.dumps(rain_data, ensure_ascii=False, indent=2).encode("utf8")
+
+
+def get_weather():
+    weather_dict = {}
+
+    # get Schiphol data
+    r = requests.get('http://api.buienradar.nl/data/actual/1.0/weatherstation/6240')
+    weather_dict['Schiphol'] = r.json()
+
+    # get detailed Halfweg data
+    r = requests.get('http://api.buienradar.nl/data/forecast/1.1/all/2754943')
+    weather_dict['Halfweg'] = r.json()
+
+    # if this day is almost over, remove it and focus on the next one only
+    if len(weather_dict['Halfweg']['days'][0]['hours'])==0 or weather_dict['Halfweg']['days'][0]['hours'][0]['hour'] >= 22:
+        weather_dict['Halfweg']['days'].pop(0)
+
+    if not weather_dict['Halfweg']['days'][0].has_key('precipitationmm'):
+        print "trouble ahead: this day {0} does not have a precipitation summary".format(weather_dict['Halfweg']['days'][0]['datetime'])
+
+    today_dict = weather_dict['Halfweg']['days'][0]
+    today_date = datetime.strptime(today_dict['date'], '%Y-%m-%dT%H:%M:%S')
+    tomorrow_date = today_date + timedelta(days=1)
+    aftertom_date = today_date + timedelta(days=2)
+    afteraftertom_date = today_date + timedelta(days=3)
+    weather_dict['Halfweg']['day_names'] = [today_date.strftime('%a'), tomorrow_date.strftime('%a'), aftertom_date.strftime('%a'), afteraftertom_date.strftime('%a')]
+
+    weather_dict['Halfweg']['hours'] = []
+    for day in weather_dict['Halfweg']['days'][:3]:
+        for hour in day['hours']:
+            weather_dict['Halfweg']['hours'].append(hour)
+
+    max_hour = max(weather_dict['Halfweg']['hours'], key=lambda i: i['temperature'])
+    max_hour['max'] = True
+    weather_dict['Halfweg']['max_temp'] = max_hour['temperature']
+    min_hour = min(weather_dict['Halfweg']['hours'], key=lambda i: i['temperature'])
+    min_hour['min'] = True
+    weather_dict['Halfweg']['min_temp'] = min_hour['temperature']
+
+
+    return json.dumps(weather_dict, ensure_ascii=False, indent=2).encode("utf8")
+
+
+def round_down(tm):
+    # from http://stackoverflow.com/questions/6933023/how-to-round-up-always-time-to-nearest-ten
+    upmins = floor(float(tm.minute)/10)*10
+    diffmins = upmins - tm.minute
+    newtime = tm + timedelta(minutes=diffmins)
+    newtime = newtime.replace(second=0, microsecond=0)
+    return newtime
+
+def get_radar():
+    radar_data = []
+    r = requests.get('http://api.buienradar.nl/image/1.0/webmercatorradarnl/json/?ext=png&l=2&nt=1&forc=50&hist=0&step=1')
+    radar_pics = r.json()
+
+    idx = 0
+    for pic in radar_pics['times']:
+        filename = 'weather_radar_{}'.format(idx)
+        r = requests.get(pic['url'])
+        im = Image.open(StringIO(r.content))
+        im = im.convert("RGBA")
+        # im.save("../{}_full.png".format(filename), "png")
+        # im = im.crop((523, 460, 523+44, 460+31))
+        im = im.crop((473, 425, 473+44, 425+31))
+        im.save("weather_radar.cropped.png", "png")
+
+        # with file("weather_radar.cropped.png", "wb") as f:
+        #     f.write(r.content)
+        # with file("weather_radar.new.png", "r") as f:
+        #     im = Image.open(f)
+        #     # im = im.crop((492, 414, 568, 481)).save("weather_radar.cropped.png", "png")
+        #     im = im.crop((292, 214, 568, 481)).save("weather_radar.cropped.png", "png")
+
+        os.rename("weather_radar.cropped.png", "../{}.png".format(filename))
+        idx += 1
+        pic['filename'] = filename
+        actual_time = datetime.strptime(pic['timestamp'], '%Y-%m-%dT%H:%M:%S') + timedelta(hours=radar_pics['timeOffset'])
+        pic['actual_time'] = actual_time.strftime('%a %-H:%M')
+
+
+    # now = round_down(datetime.now())  # correcting for UTC?
+    # for minutes in xrange(-60,60,10):
+    #     retrieve_time = now - timedelta(hours=2)+timedelta(minutes=minutes)
+    #     actual_time = now + timedelta(minutes=minutes)
+    #     datetimestring = retrieve_time.strftime('%Y%m%d%H%M')
+    #     # url = 'http://buienradar.nl/image/?time={0}&type=forecastzozw&extension=png'.format(datetimestring)
+    #     url = 'http://api.buienradar.nl/image/1.0/WebMercatorRadarNL/?t={}&ext=png'.format(datetimestring)
+    #     r = requests.get(url)
+    #     with file("weather_radar.png.new", "wb") as f:
+    #         f.write(r.content)
+    #     if minutes > 0:
+    #         filename = "weather_radar_plus{}".format(minutes)
+    #     elif minutes == 0:
+    #         filename = "weather_radar_now"
+    #     elif minutes < 0:
+    #         filename = "weather_radar_min{}".format(-minutes)
+    #     os.rename("weather_radar.png.new", "../{}.png".format(filename))
+    #     radar_data.append({'time': actual_time.strftime('%a %-H:%M'),
+    #                        'filename': filename})
+
+    with file("weather_radar.json.new", "wb") as f:
+        f.write(json.dumps(radar_pics, ensure_ascii=False, indent=2).encode("utf8"))
+    os.rename("weather_radar.json.new", "../weather_radar.json")
+
+
+def update():
+    # weather data
+    with file("weather_data.json.new", "wb") as f:
+        f.write(get_weather())
+    os.rename("weather_data.json.new", "../weather_data.json")
+    print('updated current weather data')
+
+    # radar
+    # r = requests.get('http://api.buienradar.nl/image/1.0/RadarMapNL?w=200&h=200')
+    get_radar()
+    print('updated current radar data')
+
+    # rain data
+    with file("weather_rain.json.new", "wb") as f:
+        f.write(get_rain())
+    os.rename("weather_rain.json.new", "../weather_rain.json")
+    print('updated current rain data')
+
+
+
+def main():
+    while 1:
+        update()
+        time.sleep(180)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,7 @@
+{
+    "name": "Weather Data",
+    "options": [],
+    "permissions": {
+        "network": "Needs to fetch live data"
+    }
+}

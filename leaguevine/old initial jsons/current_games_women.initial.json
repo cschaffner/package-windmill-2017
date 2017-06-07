@@ -1,0 +1,410 @@
+{
+  "standings":[
+    {
+      "ranking":1,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29823,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29823/gb-womens-national-team/",
+        "short_name":"GB Women",
+        "id":29823,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29823/",
+        "name":"GB Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:gb GB ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":2,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29825,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29825/germany-womens-national-team/",
+        "short_name":"Germany Women",
+        "id":29825,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29825/",
+        "name":"Germany Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:de Germany ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":3,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29830,
+      "team_country":"ch",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29830/switzerland-womens-national-team/",
+        "short_name":"Switzerland Women",
+        "id":29830,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29830/",
+        "name":"Switzerland Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:ch Switzerland ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":4,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29821,
+      "team_country":"fr",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29821/france-womens-national-team/",
+        "short_name":"France Women",
+        "id":29821,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29821/",
+        "name":"France Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:fr France ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":5,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29813,
+      "team_country":"be",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29813/belgium-womens-national-team/",
+        "short_name":"Belgium Women",
+        "id":29813,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29813/",
+        "name":"Belgium Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:be Belgium ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":6,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29822,
+      "team_country":"gb",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29822/gb-master-womens-national-team/",
+        "short_name":"GB Master Women",
+        "id":29822,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29822/",
+        "name":"GB Master Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:gb GB Master ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":7,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29812,
+      "team_country":"at",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29812/austria-womens-national-team/",
+        "short_name":"Austria Women",
+        "id":29812,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29812/",
+        "name":"Austria Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:at Austria ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":8,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29815,
+      "team_country":"dk",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29815/denmark-womens-national-team/",
+        "short_name":"Denmark Women",
+        "id":29815,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29815/",
+        "name":"Denmark Women's National Team "
+      },
+      "ties":0,
+      "team_name":"flag:dk Denmark ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":9,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29827,
+      "team_country":"nl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29827/netherlands-womens-national-team/",
+        "short_name":"Netherlands Women",
+        "id":29827,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29827/",
+        "name":"Netherlands Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:nl Netherlands ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":10,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29814,
+      "team_country":"cz",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29814/czech-republic-master-womens-national-team/",
+        "short_name":"CZ Master Women",
+        "id":29814,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29814/",
+        "name":"Czech Republic Master Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:cz CZ Master ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":11,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29824,
+      "team_country":"de",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29824/germany-master-womens-national-team/",
+        "short_name":"GER Master Women",
+        "id":29824,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29824/",
+        "name":"Germany Master Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:de GER Master ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":12,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29826,
+      "team_country":"nl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29826/netherlands-master-womens-national-team/",
+        "short_name":"NL Master Women",
+        "id":29826,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29826/",
+        "name":"Netherlands Master Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:nl NL Master ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":13,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29829,
+      "team_country":"ch",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29829/switzerland-master-womens-national-team/",
+        "short_name":"SUI Master Women",
+        "id":29829,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29829/",
+        "name":"Switzerland Master Women's National Team"
+      },
+      "ties":0,
+      "team_name":"flag:ch SUI Master ",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":14,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29817,
+      "team_country":"at",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29817/eyecatchers/",
+        "short_name":"Eyecatchers",
+        "id":29817,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29817/",
+        "name":"Eyecatchers"
+      },
+      "ties":0,
+      "team_name":"flag:at Eyecatchers",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":15,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29828,
+      "team_country":"ua",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29828/remix/",
+        "short_name":"Re:Mix",
+        "id":29828,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29828/",
+        "name":"Re:Mix"
+      },
+      "ties":0,
+      "team_name":"flag:ua Re:Mix",
+      "avg_goal_difference":"0.00"
+    },
+    {
+      "ranking":16,
+      "wins":0,
+      "losses":0,
+      "swiss_opponent_score_avg":"0",
+      "team_id":29816,
+      "team_country":"pl",
+      "swiss_score":"0",
+      "team":{
+        "leaguevine_url":"https://www.leaguevine.com/teams/29816/donuts/",
+        "short_name":"Donuts",
+        "id":29816,
+        "resource_uri":"https://api.leaguevine.com/v1/teams/29816/",
+        "name":"Donuts"
+      },
+      "ties":0,
+      "team_name":"flag:pl Donuts",
+      "avg_goal_difference":"0.00"
+    }
+  ],
+  "round_name":"Round 1",
+  "start_time":"Fri 10:00",
+  "games":[
+    {
+      "field":"Field 3 far",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"GB ",
+      "team_2":"Netherlands ",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"nl",
+      "field_nr":"3"
+    },
+    {
+      "field":"Field 4 far",
+      "team_1_country":"de",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Germany ",
+      "team_2":"CZ Master ",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"cz",
+      "field_nr":"4"
+    },
+    {
+      "field":"Field 8",
+      "team_1_country":"at",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Austria ",
+      "team_2":"Re:Mix",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"ua",
+      "field_nr":"8"
+    },
+    {
+      "field":"Field 9",
+      "team_1_country":"fr",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"France ",
+      "team_2":"NL Master ",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"nl",
+      "field_nr":"9"
+    },
+    {
+      "field":"Field 10",
+      "team_1_country":"be",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Belgium ",
+      "team_2":"SUI Master ",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"ch",
+      "field_nr":"10"
+    },
+    {
+      "field":"Field 11",
+      "team_1_country":"gb",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"GB Master ",
+      "team_2":"Eyecatchers",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"at",
+      "field_nr":"11"
+    },
+    {
+      "field":"Field 19",
+      "team_1_country":"ch",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Switzerland ",
+      "team_2":"GER Master ",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"de",
+      "field_nr":"19"
+    },
+    {
+      "field":"Field 20",
+      "team_1_country":"dk",
+      "team_2_score":0,
+      "team_1_score":0,
+      "team_1":"Denmark ",
+      "team_2":"Donuts",
+      "is_final":false,
+      "start_time":"Fri 10:00",
+      "team_2_country":"pl",
+      "field_nr":"20"
+    }
+  ],
+  "time_last_updated_unix":1464809301,
+  "start_time_unix":1464940800
+}

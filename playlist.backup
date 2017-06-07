@@ -1,0 +1,80 @@
+[{
+    "module": "text",
+    "options": {
+        "text": "This is just a test message for now!"
+    },
+    "chance": 0.2
+},
+{
+    "module": "teams",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+
+},
+{
+    "module": "swissgames",
+    "chance": 0.2,
+    "options": {
+        "division": "open",
+        "font_size": 50,
+        "y_lift": 300,
+        "top_title": "Open",
+        "line_break_fraction_games": 2,
+        "line_break_fraction_standings": 6,
+        "duration": 10
+    }
+},
+{
+    "module": "swissgames",
+    "chance": 0.6,
+    "options": {
+        "division": "women",
+        "font_size": 50,
+        "y_lift": 0,
+        "top_title": "Women",
+        "line_break_fraction_games": 2,
+        "line_break_fraction_standings": 4,
+        "duration": 25
+    }
+},
+{
+    "module": "swissgames",
+    "chance": 0.4,
+    "options": {
+        "division": "mixed",
+        "font_size": 42,
+        "y_lift": 800,
+        "top_title": "Mixed",
+        "line_break_fraction_games": 20,
+        "line_break_fraction_standings": 8,
+        "duration": 10
+    }
+},
+{
+    "module": "playoff",
+    "chance": 0.2,
+    "options": {
+        "division": "women",
+        "top_title": "Women",
+        "duration": 10
+    }
+},
+{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "rotating_elephant_big.mp4",
+                "duration": 10,
+                "raw": false,
+                "text": "Welcome to Windmill 2016!"
+            }
+        ]
+    },
+    "chance": 0.3,
+    "hours": "10 11 12 13 14 15 16 17 18 19 20 21"
+}
+]
+

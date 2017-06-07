@@ -1,0 +1,7 @@
+{
+    "name": "GVB Departures",
+    "options": [],
+    "permissions": {
+        "network": "Needs to fetch live data"
+    }
+}
