@@ -15,8 +15,8 @@ copyfile("playlist_{}.json".format(CONFIG['playlist']), "playlist.json")
 
 # CONFIG = {"timezone": "Europe/Berlin"}
 
-diff = datetime(2017, 6, 10, 12, 00, 00) - datetime.utcnow()
-# diff = datetime.utcnow() - datetime.utcnow()
+# diff = datetime(2017, 6, 10, 12, 00, 00) - datetime.utcnow()
+diff = datetime.utcnow() - datetime.utcnow()
 
 lol = itertools.count()
 
