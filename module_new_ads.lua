@@ -46,6 +46,7 @@ local image_idx = 0
 --end
 
 function M.can_schedule()
+    print(CONFIG.ads_list)
     for ad, v in pairs(CONFIG.ads_list) do
         print('ad item ' .. ad.item .. ' with duration ' .. ad.duration)
     end
