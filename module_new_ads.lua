@@ -46,7 +46,7 @@ local image_idx = 0
 --end
 
 function M.can_schedule()
-    print(#CONFIG.ads_list)
+    print(#CONFIG['ads_list'])
     for idx = 1, #CONFIG.ads_list do
         print('ad ' .. idx .. ' is item ' .. CONFIG.ads_list[idx])
     end
