@@ -1,4 +1,9 @@
 [{
     "module": "images",
     "chance": 1
-}]
+},
+{
+    "module": "ads",
+    "chance": 1
+}
+]
