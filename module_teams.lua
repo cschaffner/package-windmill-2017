@@ -45,7 +45,9 @@ function M.run(duration, args, fn)
     a.add(anims.my_moving_font(S,E, 200, y, "flag:".. args.team.country .. " " .. args.team.name, 80, 1,1,1,1))
     y = y + 80 + 20
     a.add(anims.my_moving_font(S,E, 200, y, "Division: ".. args.team.division, text_size, 1,1,1,1))
-    a.add(anims.my_moving_font(S,E, 650, y, "Current rank: ".. args.team.current_standing.ranking, text_size, 1,1,1,1))
+    if args.team.current_standing.ranking then
+        a.add(anims.my_moving_font(S,E, 650, y, "Current rank: ".. args.team.current_standing.ranking, text_size, 1,1,1,1))
+    end if
     y = y + text_size + 10
 
     if args.team.city ~= "" then
