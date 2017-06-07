@@ -35,7 +35,7 @@ import os
 import sys
 import json as json_module
 import socket
-# import pyinotify
+import pyinotify
 from tempfile import NamedTemporaryFile
 
 types = {}
