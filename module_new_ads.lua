@@ -51,7 +51,7 @@ util.file_watch("config.json", function(raw)
     for idx = 1, config.ads_list do
         print('ad ' .. idx .. ' is item ' .. CONFIG.ads_list[idx])
     end
-
+end)
 
 
 function M.can_schedule()
