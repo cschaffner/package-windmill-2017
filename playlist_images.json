@@ -4,6 +4,7 @@
 },
 {
     "module": "ads",
-    "chance": 1
+    "chance": 1,
+    "duration": 10
 }
 ]
