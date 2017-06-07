@@ -37,19 +37,19 @@ function M.can_schedule()
 end
 
 function M.prepare(options)
-    if options.division == 'open' then
+    if CONFIG.division == 'open' then
         options.font_size = 50
         options.y_lift = 300
         options.top_title = 'Open'
         options.line_break_fraction_games = 2
         options.line_break_fraction_standings = 7
-    elseif options.division == 'mixed' then
+    elseif CONFIG.division == 'mixed' then
         options.font_size = 42
         options.y_lift = 800
         options.top_title = 'Mixed'
         options.line_break_fraction_games = 20
         options.line_break_fraction_standings = 8
-    elseif options.division == 'women' then
+    elseif CONFIG.division == 'women' then
         options.font_size = 50
         options.y_lift = 0
         options.top_title = 'Women'
@@ -61,11 +61,11 @@ end
 
 function M.run(duration, args, fn)
     local game_data
-    if args.division == 'open' then
+    if CONFIG.division == 'open' then
         game_data = open_data
-    elseif args.division == 'mixed' then
+    elseif CONFIG.division == 'mixed' then
         game_data = mixed_data
-    elseif args.division == 'women' then
+    elseif CONFIG.division == 'women' then
         game_data = women_data
     end
 
