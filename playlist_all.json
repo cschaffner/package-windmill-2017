@@ -3,10 +3,10 @@
     "options": {
         "videos": [
             {
-                "file": "rotating_elephant_big.mp4",
+                "file": "rotating_elephant_smallish.mp4",
                 "duration": 10,
                 "raw": false,
-                "text": "Welcome to Windmill 2016!"
+                "text": "Welcome to Windmill 2017!"
             }
         ]
     },

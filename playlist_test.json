@@ -1,6 +1,6 @@
 [
     {
-    "module": "new_ads",
+    "module": "ads",
     "chance": 1,
     "options": {
         "duration": 10
