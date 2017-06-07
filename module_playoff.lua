@@ -42,6 +42,9 @@ function M.can_schedule(options)
     elseif options.division == 'women' then
         brackets = women_brackets
     end
+    if string.len(brackets[1].team_1)>0 then
+        print(options.division .. ' division is ready for playoff')
+    end
     return string.len(brackets[1].team_1)>0
 end
 
