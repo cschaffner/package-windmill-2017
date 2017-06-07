@@ -35,6 +35,7 @@ end
 
 function M.can_schedule(options)
     local brackets
+    print('current options.division is ' .. options.division)
     if options.division == 'open' then
         brackets = open_brackets
     elseif options.division == 'mixed' then
