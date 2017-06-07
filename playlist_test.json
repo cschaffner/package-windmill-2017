@@ -1,4 +1,12 @@
-[{
+[
+    {
+    "module": "teams",
+    "chance": 1,
+    "options": {
+        "duration": 10
+    }
+
+},{
     "module": "text",
     "options": {
         "text": "Like the screens? Too slow, too fast? Please let us know at HQ and we'll adjust."
