@@ -1,12 +1,12 @@
 [{
     "module": "swissgames",
-    "chance": 0.9,
+    "chance": 1,
     "options": {
         "duration": 20
     }
 }, {
     "module": "playoff",
-    "chance": 0.8,
+    "chance": 1,
     "options": {
         "duration": 20
     }
