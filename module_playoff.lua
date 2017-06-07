@@ -35,18 +35,17 @@ end
 
 function M.can_schedule(options)
     local brackets
-    print('current options.division is ' .. CONFIG.division)
-    if options.division == 'open' then
+    if CONFIG.division == 'open' then
         brackets = open_brackets
-    elseif options.division == 'mixed' then
+    elseif CONFIG.division == 'mixed' then
         brackets = mixed_brackets
-    elseif options.division == 'women' then
+    elseif CONFIG.division == 'women' then
         brackets = women_brackets
     end
     if string.len(brackets[1].team_1)>0 then
-        print(options.division .. ' division is ready for playoff')
+        print(CONFIG.division .. ' division is ready for playoff')
     else
-        print(options.division .. ' division has no playoff games filled in yet')
+        print(CONFIG.division .. ' division has no playoff games filled in yet')
     end
     return string.len(brackets[1].team_1)>0
 end
