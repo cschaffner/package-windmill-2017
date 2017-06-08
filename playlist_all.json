@@ -28,7 +28,7 @@
 
 },{
     "module": "weather",
-    "chance": 0.2,
+    "chance": 0.4,
     "options": {
         "duration": 15
     }
