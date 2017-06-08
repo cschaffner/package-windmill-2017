@@ -5,15 +5,16 @@
             {
                 "file": "mov_tank.mp4",
                 "duration": 10,
+                "raw": false,
                 "text": "Welcome to Windmill 2017!"
             }
         ]
     },
-    "chance": 0.2
+    "chance": 0.8
 },
 {
     "module": "teams",
-    "chance": 1,
+    "chance": 0,
     "options": {
         "duration": 10
     }
