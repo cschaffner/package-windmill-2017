@@ -52,7 +52,7 @@ end
 function M.prepare(options)
     local image 
     image, image_idx = utils.cycled(imglist, image_idx)
-    return 20, image
+    return 10, image
 end
 
 function M.run(duration, image, fn)
