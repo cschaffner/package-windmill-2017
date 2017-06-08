@@ -21,7 +21,7 @@
 },
 {
     "module": "swissgames",
-    "chance": 0.4,
+    "chance": 1,
     "options": {
         "duration": 20
     }
