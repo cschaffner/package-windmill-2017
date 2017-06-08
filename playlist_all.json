@@ -3,7 +3,7 @@
     "options": {
         "videos": [
             {
-                "file": "mov_tank.mp4",
+                "file": "mov_WM17caravan.mp4",
                 "duration": 10,
                 "raw": false,
                 "text": "Welcome to Windmill 2017!"
@@ -40,5 +40,8 @@
     "chance": 0.6
 },{
     "module": "gvb",
-    "chance": 0.6
+    "chance": 0.6,
+    "options": {
+        "duration": 10
+    }
 }]
