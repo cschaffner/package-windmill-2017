@@ -27,7 +27,7 @@ end
 function M.prepare(options)
     repeat
         options.team, team_idx = utils.cycled(teams, team_idx)
-    until options.team.division == options.division
+    until options.team.division == CONFIG.division
     return options.duration or 10, options
 end
 
