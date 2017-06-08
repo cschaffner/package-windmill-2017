@@ -21,13 +21,13 @@
 },
 {
     "module": "swissgames",
-    "chance": 0.2,
+    "chance": 0.4,
     "options": {
         "duration": 20
     }
 }, {
     "module": "playoff",
-    "chance": 0.2,
+    "chance": 0.4,
     "options": {
         "duration": 20
     }
@@ -55,7 +55,7 @@
 }, {
     "module": "text",
     "options": {
-        "text": "Make your own screens? Check out https://info-beamer.com "
+        "text": "These screens are brought to you with the help of https://info-beamer.com "
     },
     "chance": 0.6
 }, {
