@@ -10,11 +10,11 @@
             }
         ]
     },
-    "chance": 0.8
+    "chance": 0.0
 },
 {
     "module": "teams",
-    "chance": 0,
+    "chance": 1,
     "options": {
         "duration": 10
     }
