@@ -14,7 +14,7 @@
     "module": "text",
     "chance": 0.1,
     "options": {
-        "text": "Swiss Score, eh?    If Team A with a Swiss Score of 3.0 plays Team B with Swiss Score of -2.0, A is expected to win by 5.",
+        "text": "Swiss Score, eh?    If Team A with Swiss Score of 3.0 plays Team B with Swiss Score of -2.0, A is expected to win by 5.",
         "duration": 10
     }
 },
@@ -32,4 +32,10 @@
         "duration": 10
     }
 
+},{
+    "module": "images",
+    "chance": 0.1,
+    "options": {
+        "duration": 10
+    }
 }]
