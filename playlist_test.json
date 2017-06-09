@@ -6,7 +6,19 @@
                 "file": "mov_windmill_welcome1.mp4",
                 "duration": 10,
                 "raw": false,
-                "text": "Welcome to Windmill 2017!"
+                "text": "Opening Ceremony (video by GH)"
+            },
+            {
+                "file": "mov_windmill_welcome2.mp4",
+                "duration": 10,
+                "raw": false,
+                "text": "Opening Ceremony (video by GH)"
+            },
+            {
+                "file": "mov_windmill_welcome3.mp4",
+                "duration": 14,
+                "raw": false,
+                "text": "Opening Ceremony (video by GH)"
             }
         ]
     },
