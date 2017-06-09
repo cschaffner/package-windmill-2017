@@ -32,4 +32,10 @@
         "duration": 10
     }
 
+},{
+    "module": "images",
+    "chance": 0.1,
+    "options": {
+        "duration": 10
+    }
 }]
