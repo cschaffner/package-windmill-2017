@@ -1,4 +1,18 @@
 [{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_windmill_welcome1.mp4",
+                "duration": 10,
+                "raw": false,
+                "text": "Welcome to Windmill 2017!"
+            }
+        ]
+    },
+    "chance": 1
+},
+{
     "module": "swissgames",
     "chance": 1,
     "options": {
