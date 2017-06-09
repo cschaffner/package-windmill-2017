@@ -2,7 +2,7 @@
     "module": "swissgames",
     "chance": 1,
     "options": {
-        "duration": 30
+        "duration": 10
     }
 }, {
     "module": "playoff",

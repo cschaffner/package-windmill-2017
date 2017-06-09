@@ -48,7 +48,7 @@ TIMEDIFF = datetime.now() - datetime.now()
 
 print('current host is {0}'.format(CONFIG['leaguevine_server']))
 if CONFIG['leaguevine_server'] == 'local':
-    HOST = 'http://192.168.10.38:8000/api/v1'
+    HOST = 'http://192.168.99.21:8000/api/v1'
 elif CONFIG['leaguevine_server'] == 'playwithlv':
     HOST = 'http://api.playwithlv.com/v1'
 else:
