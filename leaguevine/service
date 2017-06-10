@@ -474,6 +474,10 @@ def current_games(division='open', current_datetime=datetime.now()):
 
     curgames = {'games': []}
     for game in games:
+        try:
+            print(datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00'))
+        except:
+            print('trouble')
         if game['team_2_id'] and datetime.strptime(game['start_time'], '%Y-%m-%dT%H:%M:%S+02:00') == games_start:
             # not a  BYE  and  same start as first game
             curgames['games'].append(game_to_dict(division, game))
