@@ -17,11 +17,11 @@ from dateutil import parser
 from datetime import datetime, timedelta
 from calendar import timegm
 
-# from hosted import CONFIG
-# CONFIG.restart_on_update()
+from hosted import CONFIG
+CONFIG.restart_on_update()
 
-with file("config.json") as f:
-    CONFIG = json.load(f)
+# with file("config.json") as f:
+#     CONFIG = json.load(f)
 
 with file(CONFIG['lv_data_source']) as f:
 # with file("windmill2016_test.json") as f:
@@ -471,6 +471,8 @@ def current_games(division='open', current_datetime=datetime.now()):
 
     games = r.json()['objects']
     games_start = datetime.strptime(games[0]['start_time'], '%Y-%m-%dT%H:%M:%S+02:00')
+    if games_start == datetime(2017, 6, 11, 10, 15, 00):
+        games_start = datetime(2017, 6, 11, 10, 30, 00)
 
     curgames = {'games': []}
     for game in games:

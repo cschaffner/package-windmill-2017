@@ -2,7 +2,7 @@
     "module": "text",
     "chance": 0.8,
     "options": {
-        "text": "All finals start 30 min earlier than announced. Women: 11:45,        Mixed: 13:30, Open: 15:15",
+        "text": "All finals start 30 min earlier than announced. Women: 11:45,          Mixed: 13:30, Open: 15:15",
         "duration": 10
     }
 },{
