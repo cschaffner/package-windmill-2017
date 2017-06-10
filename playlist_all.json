@@ -1,4 +1,11 @@
 [{
+    "module": "text",
+    "chance": 0.8,
+    "options": {
+        "text": "Women final starts at 11:45 (30 min earlier than announced)",
+        "duration": 10
+    }
+},{
     "module": "teams",
     "chance": 1,
     "options": {
