@@ -7,14 +7,14 @@
 
 },  {
     "module": "swissgames",
-    "chance": 1,
+    "chance": 0.6,
     "options": {
         "duration": 20
     }
 
 }, {
     "module": "playoff",
-    "chance": 1,
+    "chance": 0.6,
     "options": {
         "duration": 15
     }
@@ -32,7 +32,7 @@
     "chance": 0.6
 },{
     "module": "gvb",
-    "chance": 0.6,
+    "chance": 0.2,
     "options": {
         "duration": 10,
         "hours": "0 18 19 20 21 22 23 24"
