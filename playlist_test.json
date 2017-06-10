@@ -16,6 +16,30 @@
                 "raw": false,
                 "duration": 10,
                 "text": "Friday top plays 1"
+            },
+            {
+                "file": "mov_top2.mp4",
+                "raw": false,
+                "duration": 8,
+                "text": "Friday top plays 2"
+            },
+            {
+                "file": "mov_top3.mp4",
+                "raw": false,
+                "duration": 8,
+                "text": "Friday top plays 3"
+            },
+            {
+                "file": "mov_top4.mp4",
+                "raw": false,
+                "duration": 10,
+                "text": "Friday top plays 4"
+            },
+            {
+                "file": "mov_top5.mp4",
+                "raw": false,
+                "duration": 6,
+                "text": "Friday top plays 5"
             }
         ]
     },
