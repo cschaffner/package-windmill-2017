@@ -1,4 +1,42 @@
 [{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_day2_top1.mp4",
+                "raw": false,
+                "duration": 31,
+                "text": "Saturday top plays 1"
+            },
+            {
+                "file": "mov_day2_top2.mp4",
+                "raw": false,
+                "duration": 34,
+                "text": "Saturday top plays 2"
+            },
+            {
+                "file": "mov_day2_top3.mp4",
+                "raw": false,
+                "duration": 27,
+                "text": "Saturday top plays 3"
+            },
+            {
+                "file": "mov_day2_top4.mp4",
+                "raw": false,
+                "duration": 37,
+                "text": "Saturday top plays 4"
+            },
+            {
+                "file": "mov_day2_top5.mp4",
+                "raw": false,
+                "duration": 29,
+                "text": "Saturday top plays 5"
+            }
+        ]
+    },
+    "chance": 0.4
+},
+{
     "module": "text",
     "chance": 0.8,
     "options": {
@@ -81,6 +119,6 @@
             }
         ]
     },
-    "chance": 0.4
+    "chance": 0.2
 }
 ]
