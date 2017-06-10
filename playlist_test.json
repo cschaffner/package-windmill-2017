@@ -1,9 +1,43 @@
 [
 {
     "module": "teams",
-    "chance": 1,
+    "chance": 0.1,
     "options": {
         "duration": 10
     }
 
-}]
+},
+{
+    "module": "videos",
+    "options": {
+        "videos": [
+            {
+                "file": "mov_top1.mp4",
+                "raw": false,
+                "text": "Friday top plays 1"
+            },
+            {
+                "file": "mov_top2.mp4",
+                "raw": false,
+                "text": "Friday top plays 2"
+            },
+            {
+                "file": "mov_top3.mp4",
+                "raw": false,
+                "text": "Friday top plays 3"
+            },
+            {
+                "file": "mov_top4.mp4",
+                "raw": false,
+                "text": "Friday top plays 4"
+            },
+            {
+                "file": "mov_top5.mp4",
+                "raw": false,
+                "text": "Friday top plays 5"
+            }
+        ]
+    },
+    "chance": 1
+}
+]
