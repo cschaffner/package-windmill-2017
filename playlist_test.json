@@ -1,48 +1,25 @@
 [
 {
     "module": "teams",
-    "chance": 0.1,
+    "chance": 1,
     "options": {
         "duration": 10
     }
 
 },
 {
-    "module": "videos",
+    "module": "weather",
+    "chance": 1,
     "options": {
-        "videos": [
-            {
-                "file": "mov_day2_top1.mp4",
-                "raw": false,
-                "duration": 31,
-                "text": "Saturday top plays 1"
-            },
-            {
-                "file": "mov_day2_top2.mp4",
-                "raw": false,
-                "duration": 34,
-                "text": "Saturday top plays 2"
-            },
-            {
-                "file": "mov_day2_top3.mp4",
-                "raw": false,
-                "duration": 27,
-                "text": "Saturday top plays 3"
-            },
-            {
-                "file": "mov_day2_top4.mp4",
-                "raw": false,
-                "duration": 37,
-                "text": "Saturday top plays 4"
-            },
-            {
-                "file": "mov_day2_top5.mp4",
-                "raw": false,
-                "duration": 29,
-                "text": "Saturday top plays 5"
-            }
-        ]
-    },
-    "chance": 1
+        "duration": 10
+    }
+},
+{
+    "module": "gvb",
+    "chance": 1,
+    "options": {
+        "duration": 10,
+        "hours": "0 18 19 20 21 22 23 24"
+    }
 }
 ]
