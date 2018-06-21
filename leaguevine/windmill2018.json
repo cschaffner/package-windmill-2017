@@ -1,15 +1,15 @@
 {
   "tournaments": {
     "women": {
-      "tournament_id": 20809,
+      "tournament_id": 20662,
       "color": "#d73300"
     },
     "mixed": {
-      "tournament_id": 20808,
+      "tournament_id": 20661,
       "color": "#a50078"
     },
     "open": {
-      "tournament_id": 20807,
+      "tournament_id": 20659,
       "color": "#e58700"
     }
   },
