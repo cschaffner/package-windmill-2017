@@ -12,8 +12,10 @@
             ["windmill2016_test.json", "test 2016"],
             ["windmill2017.json", "real 2017"],
             ["windmill2017_test.json", "test 2017"]
+            ["windmill2018.json", "real 2018"],
+            ["windmill2017_test.json", "test 2018"]
         ],
-        "default": "windmill2017.json"
+        "default": "windmill2018.json"
         },
         {
             "title": "Leaguevine server",
