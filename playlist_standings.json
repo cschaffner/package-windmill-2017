@@ -19,6 +19,14 @@
     }
 },
 {
+    "module": "gvb",
+    "chance": 0.1,
+    "options": {
+        "duration": 10,
+        "hours": "0 18 19 20 21 22 23 24"
+    }
+},
+{
     "module": "weather",
     "chance": 0.1,
     "options": {
@@ -75,6 +83,6 @@
             }
         ]
     },
-    "chance": 0.1
+    "chance": 0
 }
 ]
